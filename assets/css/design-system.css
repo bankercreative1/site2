@@ -1,0 +1,78 @@
+/* SiteFlyer design system.
+ *
+ * These are the MEASURED values of the live site, taken from computed styles
+ * across ALL 54 pages at 1440px and 390px. Each value below is the dominant
+ * one; STYLE-GUIDE.md lists how dominant, and the known variants. They are declarations of what is, not a new
+ * theme: nothing in this file changes how anything renders. It exists so that a
+ * person or an AI editing this site has a single place to read the rules
+ * instead of guessing from machine-generated class names.
+ *
+ * If you are adding a section, do NOT write new CSS using these numbers.
+ * Copy an existing block's markup, including its fl-node-* classes, and change
+ * the words. See STYLE-GUIDE.md.
+ */
+
+:root {
+  /* ---- colour ------------------------------------------------------- */
+  --sf-ink:        rgb(58, 58, 58);    /* body text, by far the most used */
+  --sf-navy:       rgb(50, 70, 111);   /* #32466f  headings, dark sections */
+  --sf-accent:     rgb(214, 48, 17);   /* #d63011  links, buttons, alt headings */
+  --sf-white:      rgb(255, 255, 255);
+  --sf-surface:    rgb(247, 247, 247); /* light section background */
+  --sf-border:     rgb(204, 204, 204);
+
+  /* The accent was #f16950 until 2026-09-08. It measured 3.05:1 on white,
+     which fails WCAG AA for normal text. #d63011 is the lightest value with the
+     same hue that clears 4.5:1 on BOTH white (4.89) and --sf-surface (4.57).
+     Do not lighten it back without re-checking contrast on both. */
+
+  /* ---- type families -------------------------------------------------
+     The family names are still the original Adobe names because the whole site
+     asks for them. They are ALIASED in self-hosted-fonts.css to self-hosted
+     Google fonts: circe and circe-rounded -> Nunito, circe-slab-c -> Zilla Slab.
+     To change a typeface, edit that one file. Never add a font CDN link. */
+  --sf-font-heading: "circe-rounded", sans-serif;  /* h1, h2, h3 - weight 800 */
+  --sf-font-body:    "circe", sans-serif;          /* body, h4, buttons */
+  --sf-font-alt:     "circe-slab-c", serif;        /* .alt-heading - weight 100 */
+
+  /* ---- type scale, desktop (>= ~960px) -------------------------------- */
+  --sf-h1:        60px;  --sf-h1-lh:   78px;  --sf-h1-weight: 800;
+  /* 40 of 53 pages. 7 pages use 40/52 instead AND fail to scale down on
+     mobile, staying 40px at 390px. That is a defect on those pages. */
+  --sf-h2:        44px;  --sf-h2-lh:   48px;  --sf-h2-weight: 800;
+  --sf-h3:        35px;  --sf-h3-lh:   42px;  --sf-h3-weight: 800;
+  --sf-h4:        22px;  --sf-h4-lh:   26px;  --sf-h4-weight: 500;
+  --sf-alt:       35px;  --sf-alt-lh:  42px;  --sf-alt-weight: 100;
+  --sf-body:      18px;  --sf-body-lh: 25px;  --sf-body-weight: 100;
+  --sf-button:    22px;  --sf-button-lh: 18px; --sf-button-weight: 400;
+  --sf-nav:       14px;  --sf-nav-lh:  18px;  --sf-nav-weight: 700;
+
+  /* ---- type scale, mobile (<= ~390px) --------------------------------- */
+  --sf-h1-sm:     25px;  --sf-h1-sm-lh:   33px;
+  --sf-h2-sm:     24px;  --sf-h2-sm-lh:   26px;
+  --sf-h3-sm:     18px;  --sf-h3-sm-lh:   22px;
+  --sf-h4-sm:     16px;  --sf-h4-sm-lh:   19px;
+  --sf-alt-sm:    18px;  --sf-alt-sm-lh:  22px;
+  --sf-body-sm:   15px;  --sf-body-sm-lh: 22px;
+  --sf-button-sm: 16px;  --sf-button-sm-lh: 19px;
+
+  /* ---- layout --------------------------------------------------------- */
+  --sf-container:        1300px;  /* the dominant fixed row width */
+  --sf-container-narrow: 1100px;
+  --sf-container-text:    800px;
+
+  /* ---- spacing rhythm, in order of how often each is used -------------- */
+  --sf-space-1:  10px;
+  --sf-space-2:  20px;
+  --sf-space-3:   5px;
+  --sf-space-4:   8px;
+  --sf-space-5:  15px;
+  --sf-space-6:  30px;
+  --sf-space-7:  40px;
+  --sf-space-8:  80px;   /* section padding */
+
+  /* ---- corners --------------------------------------------------------- */
+  --sf-radius:    10px;  /* cards, panels */
+  --sf-radius-sm:  5px;  /* buttons */
+  --sf-radius-xs:  4px;
+}
