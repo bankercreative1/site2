@@ -1,10 +1,17 @@
 {
-  // siteflyer.com as static HTML. Cloudflare folded Pages into Workers, so this
-  // is a Worker whose only job is serving the files in this directory.
+  // siteflyer.com as static HTML, plus an R2 binding so large media is served
+  // from the same origin as the site. That avoids R2's rate-limited r2.dev URL
+  // and needs no DNS change, so nothing about video has to move when the domain
+  // is pointed here.
   "name": "siteflyer-static",
+  "main": "src/worker.js",
   "compatibility_date": "2026-09-08",
   "assets": {
     "directory": ".",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
-  }
+  },
+  "r2_buckets": [
+    { "binding": "MEDIA", "bucket_name": "siteflyer-media" }
+  ]
 }

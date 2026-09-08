@@ -505,7 +505,33 @@ document.addEventListener("DOMContentLoaded",function(){
     });
   });
 
-  /* c) mobile nav toggle. UABB/BB drive this from JS; without it the menu button
+  /* c) PowerPack video. The module puts a clickable overlay with a play icon ON
+        TOP of the <video preload="none">, and its JS hid the overlay and started playback. With
+        that JS stripped the play button is dead: the video is fine, nothing is
+        listening. Wire the overlay up. */
+  document.querySelectorAll(".pp-video-wrapper").forEach(function(w){
+    var v=w.querySelector("video"), ov=w.querySelector(".pp-video-image-overlay");
+    if(!v||!ov)return;
+    var icon=ov.querySelector(".pp-video-play-icon")||ov;
+    if(!icon.hasAttribute("role")) icon.setAttribute("role","button");
+    if(!icon.hasAttribute("tabindex")) icon.setAttribute("tabindex","0");
+    if(!icon.getAttribute("aria-label")) icon.setAttribute("aria-label","Play video");
+    var start=function(e){
+      if(e){e.preventDefault();e.stopPropagation();}
+      ov.style.display="none";
+      v.setAttribute("preload","auto");
+      var pr=v.play();
+      if(pr&&pr.catch)pr.catch(function(){ ov.style.display=""; });
+    };
+    ov.addEventListener("click",start);
+    icon.addEventListener("keydown",function(e){
+      if(e.key==="Enter"||e.key===" "||e.key==="Spacebar")start(e);
+    });
+    /* if it ever ends or is paused back to the start, the overlay does not return:
+       the native controls take over from here, same as the original */
+  });
+
+  /* d) mobile nav toggle. UABB/BB drive this from JS; without it the menu button
         is inert on small screens on every page. */
   document.querySelectorAll(".uabb-creative-menu-mobile-toggle,.fl-menu-mobile-toggle,.uabb-menu-toggle")
     .forEach(function(t){
@@ -689,7 +715,7 @@ document.addEventListener("DOMContentLoaded",function(){
 		
 <div class="pp-video-wrapper pp-video-source-hosted pp-aspect-ratio-169">
 		<div class="pp-fit-aspect-ratio">
-			<video poster="/assets/img/poster-Siteflyer-Process-Video.jpg" preload="none" class="pp-video-player" src="https://siteflyer.com/wp-content/uploads/2024/12/Siteflyer-Process-Video.mp4" controls="" controlslist="nodownload" playsinline=""></video>
+			<video poster="/assets/img/poster-Siteflyer-Process-Video.jpg" preload="none" class="pp-video-player" src="/video/Siteflyer-Process-Video.mp4" controls="" controlslist="nodownload" playsinline=""></video>
 				<div class="pp-video-image-overlay" style="background-image: url("../img/go-screengrab-1.png");">
 										<div class="pp-video-play-icon" role="button" tabindex="0">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 415.346 415.346" xml:space="preserve" aria-hidden="true">
