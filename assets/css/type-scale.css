@@ -1,0 +1,80 @@
+/* SiteFlyer type scale, normalised.
+ *
+ * The generated Beaver Builder CSS sets heading sizes per node, so the same
+ * heading level renders at different sizes on different pages: h1 measured at
+ * 60, 40, 38, 37, 36 and 28px across the site, and the /locations/ pages did not
+ * scale down on mobile at all. Sizes like 37px are not chosen by a designer.
+ *
+ * This file makes one heading level mean one size everywhere. The values are the
+ * measured DOMINANT ones, so the majority of pages are unchanged and the
+ * outliers are brought onto the system.
+ *
+ * Loaded last and uses !important deliberately: it has to beat ~9,100
+ * node-scoped rules, and specificity games against generated selectors are not
+ * maintainable.
+ *
+ * Scoped to main content. The header nav, footer and buttons keep their own
+ * sizes, which are already consistent.
+ *
+ * Breakpoints match Beaver Builder's own: 992px and 767px.
+ */
+
+/* ---------- desktop, above 992px ------------------------------------- */
+#fl-main-content h1, #fl-main-content h1 .fl-heading-text {
+  font-size: var(--sf-h1) !important;  line-height: var(--sf-h1-lh) !important;
+  font-weight: var(--sf-h1-weight) !important;
+}
+#fl-main-content h2, #fl-main-content h2 .fl-heading-text {
+  font-size: var(--sf-h2) !important;  line-height: var(--sf-h2-lh) !important;
+  font-weight: var(--sf-h2-weight) !important;
+}
+#fl-main-content h3:not(.alt-heading), #fl-main-content h3:not(.alt-heading) .fl-heading-text {
+  font-size: var(--sf-h3) !important;  line-height: var(--sf-h3-lh) !important;
+  font-weight: var(--sf-h3-weight) !important;
+}
+#fl-main-content h4, #fl-main-content h4 .fl-heading-text {
+  font-size: var(--sf-h4) !important;  line-height: var(--sf-h4-lh) !important;
+  font-weight: var(--sf-h4-weight) !important;
+}
+#fl-main-content .alt-heading, #fl-main-content .alt-heading .fl-heading-text,
+#fl-main-content .fl-heading-text .alt-heading {
+  font-size: var(--sf-alt) !important;  line-height: var(--sf-alt-lh) !important;
+  font-weight: var(--sf-alt-weight) !important;
+}
+#fl-main-content .fl-rich-text > p, #fl-main-content .fl-module-rich-text p {
+  font-size: var(--sf-body) !important; line-height: var(--sf-body-lh) !important;
+}
+
+/* ---------- tablet, 768 to 992 --------------------------------------- */
+@media (max-width: 992px) {
+  #fl-main-content h1, #fl-main-content h1 .fl-heading-text {
+    font-size: 38px !important; line-height: 49px !important; }
+  #fl-main-content h2, #fl-main-content h2 .fl-heading-text {
+    font-size: 28px !important; line-height: 31px !important; }
+  #fl-main-content h3:not(.alt-heading), #fl-main-content h3:not(.alt-heading) .fl-heading-text {
+    font-size: 20px !important; line-height: 24px !important; }
+  #fl-main-content h4, #fl-main-content h4 .fl-heading-text {
+    font-size: 16px !important; line-height: 19px !important; }
+  #fl-main-content .alt-heading, #fl-main-content .alt-heading .fl-heading-text,
+  #fl-main-content .fl-heading-text .alt-heading {
+    font-size: 20px !important; line-height: 24px !important; }
+  #fl-main-content .fl-rich-text > p, #fl-main-content .fl-module-rich-text p {
+    font-size: 15px !important; line-height: 22px !important; }
+}
+
+/* ---------- phone, 767 and below -------------------------------------- */
+@media (max-width: 767px) {
+  #fl-main-content h1, #fl-main-content h1 .fl-heading-text {
+    font-size: var(--sf-h1-sm) !important; line-height: var(--sf-h1-sm-lh) !important; }
+  #fl-main-content h2, #fl-main-content h2 .fl-heading-text {
+    font-size: var(--sf-h2-sm) !important; line-height: var(--sf-h2-sm-lh) !important; }
+  #fl-main-content h3:not(.alt-heading), #fl-main-content h3:not(.alt-heading) .fl-heading-text {
+    font-size: var(--sf-h3-sm) !important; line-height: var(--sf-h3-sm-lh) !important; }
+  #fl-main-content h4, #fl-main-content h4 .fl-heading-text {
+    font-size: var(--sf-h4-sm) !important; line-height: var(--sf-h4-sm-lh) !important; }
+  #fl-main-content .alt-heading, #fl-main-content .alt-heading .fl-heading-text,
+  #fl-main-content .fl-heading-text .alt-heading {
+    font-size: var(--sf-alt-sm) !important; line-height: var(--sf-alt-sm-lh) !important; }
+  #fl-main-content .fl-rich-text > p, #fl-main-content .fl-module-rich-text p {
+    font-size: var(--sf-body-sm) !important; line-height: var(--sf-body-sm-lh) !important; }
+}

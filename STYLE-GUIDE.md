@@ -44,21 +44,17 @@ system and what is a one-off. Declared as CSS variables in
 | button | 22 / 18 | 16 / 19 | circe 400 | |
 | nav | 14 / 18 | 14 / 17 | circe 700 | |
 
-**Known variants, so you do not mistake them for mistakes:**
+**The scale is enforced, not just documented.** `assets/css/type-scale.css`
+loads last and normalises every heading in `#fl-main-content` to the values
+above at all three Beaver Builder breakpoints (992px and 767px). Before it
+existed, h1 rendered at 60, 40, 38, 37, 36 and 28px depending on the page, and
+the /locations/ pages did not shrink on mobile at all.
 
-- **Every location page is off the scale, and inconsistently so.** All ten under
-  `/locations/`, plus `/subscription-website-terms/`, have an h1 that is not
-  60px. Measured: 40px on six of them, then 38, 37, 36 and 28px on the others.
-  Sizes like 37px are not chosen by a designer, so the heading is being
-  auto-fitted or hand-set per page. **They also do not scale down on mobile**,
-  staying at those sizes at 390px while every other page drops to 25px.
-  This is inherited from WordPress, not introduced by the migration. Fixing it
-  means bringing that template back onto the scale, which is a visible change
-  and therefore a decision, not a cleanup.
-- 19 h2s render at 27 / 38 weight 700, and 16 h3s at 21 / 29 weight 700. Both
-  come from blog post content rather than builder headings.
-- Body copy has two common secondary sizes, 12 / 17 and 15 / 24, 54 uses each.
-  Those are fine print and captions.
+After it: h1 is 60/78 on all 53 pages, h2 is 44/48 on all 148, h3 is 35/42 on
+all 252, h4 is 22/26 on all 377. One heading level, one size, everywhere.
+
+The footer keeps its own smaller sizes (12px copyright, 15px contact block).
+That is deliberate; the scale is scoped to main content.
 
 Colours: ink `rgb(58,58,58)`, navy `#32466f`, accent `#d63011`, surface
 `rgb(247,247,247)`.
