@@ -1,0 +1,10 @@
+{
+  // siteflyer.com as static HTML. Cloudflare folded Pages into Workers, so this
+  // is a Worker whose only job is serving the files in this directory.
+  "name": "siteflyer-static",
+  "compatibility_date": "2026-09-08",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}

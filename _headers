@@ -1,16 +1,23 @@
-# Cloudflare Pages response headers.
+# Cloudflare applies EVERY matching rule and concatenates the values, so a
+# Cache-Control in the catch-all block collides with the per-asset ones and the
+# browser sees "max-age=0, must-revalidate, max-age=31536000, immutable".
+# Cache-Control therefore appears ONLY on the specific asset paths below, and the
+# catch-all carries security headers only.
 
-# Fingerprinted assets never change, so cache them for a year.
 /assets/webfonts/*
   Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
+
 /assets/img/*
   Cache-Control: public, max-age=31536000, immutable
+
 /assets/css/*
   Cache-Control: public, max-age=31536000, immutable
 
-# HTML must revalidate so edits go live immediately.
+/assets/files/*
+  Cache-Control: public, max-age=31536000, immutable
+
 /*
-  Cache-Control: public, max-age=0, must-revalidate
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
