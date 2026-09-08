@@ -1,0 +1,21 @@
+# Cloudflare Pages redirect rules. Order matters: first match wins.
+# Old WordPress asset paths must 404 rather than resolve to anything.
+/wp-content/*   /404.html   404
+/wp-includes/*  /404.html   404
+/wp-admin/*     /404.html   404
+/wp-json/*      /404.html   404
+/xmlrpc.php     /404.html   404
+
+# Trailing-slash URLs are canonical on this site, matching the old WordPress
+# paths exactly, so nothing needs rewriting here. If the client's redirect
+# table is exported later, its 301s go below this line.
+
+# From the Rank Math export (2026-09-08): the redirections table is EMPTY, so
+# there are no custom 301s to carry over. Every old URL path is reproduced
+# verbatim by this site, so nothing needs forwarding.
+#
+# One live behaviour NOT reproduced: Rank Math had attachment_redirect_urls=on,
+# sending WordPress attachment pages to https://gositeflyer.com with a 301.
+# No attachment URLs appear in the sitemap, so none are indexed, and there is no
+# stable pattern to match statically. If any turn up in Search Console later,
+# add them here.

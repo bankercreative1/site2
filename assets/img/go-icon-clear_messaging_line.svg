@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="589.5" height="73" viewBox="0 0 589.5 73">
+  <g id="icon_-_clear_messaging_line" data-name="icon - clear_messaging_line" transform="translate(-140.5 -2464)">
+    <g id="icon_-_clear_messaging" data-name="icon - clear_messaging">
+      <g id="Ellipse_251" data-name="Ellipse 251" transform="translate(657 2464)" fill="#fff" stroke="#d63011" stroke-width="2">
+        <circle cx="36.5" cy="36.5" r="36.5" stroke="none"/>
+        <circle cx="36.5" cy="36.5" r="35.5" fill="none"/>
+      </g>
+      <g id="copywriting" transform="translate(669.104 2479.268)">
+        <path id="Path_5894" data-name="Path 5894" d="M33.7,4.783H15.058a5.57,5.57,0,0,0-5.57,5.57V36.086a4.6,4.6,0,0,1-4.608,4.6h21.8a3.918,3.918,0,0,1-.126-1.762L27.1,35.7a3.818,3.818,0,0,1,1.08-2.119L36.4,25.379l1.643-1.643c.008-.008.019-.014.027-.024l.016-.016,0,0a5.755,5.755,0,0,1,1.184-.882V10.351A5.571,5.571,0,0,0,33.7,4.783ZM24.38,30.612H16.567a1.44,1.44,0,0,1,0-2.88H24.38a1.44,1.44,0,0,1,0,2.88Zm7.813-6.44H16.567a1.44,1.44,0,0,1,0-2.88H32.194a1.44,1.44,0,1,1,0,2.88Zm0-6.439H16.567a1.44,1.44,0,0,1,0-2.88H32.194a1.44,1.44,0,0,1,0,2.88Z" transform="translate(1.722 0)" fill="#d63011"/>
+        <path id="Path_5895" data-name="Path 5895" d="M8.33,18.18v9.873a1.712,1.712,0,0,1-1.712,1.712H6.6A4.592,4.592,0,0,1,2.01,25.172V23.748A5.562,5.562,0,0,1,7.578,18.18Z" transform="translate(0 8.039)" fill="#d63011"/>
+        <path id="Path_5896" data-name="Path 5896" d="M30.383,23.338l.994-.986a2.919,2.919,0,0,0-4.128-4.128l-.982.982Z" transform="translate(14.556 7.547)" fill="#d63011"/>
+        <path id="Path_5897" data-name="Path 5897" d="M27.874,19.786l-6.837,6.823a.993.993,0,0,0-.288.576l-.544,3.184a1.042,1.042,0,0,0,1.2,1.2l3.2-.544a1,1,0,0,0,.56-.288l6.821-6.821Z" transform="translate(10.911 9.003)" fill="#d63011"/>
+      </g>
+    </g>
+    <line id="Line_66" data-name="Line 66" x2="517" transform="translate(140.5 2502)" fill="none" stroke="#d63011" stroke-width="2"/>
+  </g>
+</svg>
