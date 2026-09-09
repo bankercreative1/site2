@@ -20,8 +20,8 @@
 
 .package-card {
 	box-sizing: border-box;
-	width: 84%;
-	padding: 28px 32px 24px;
+	width: 72%;
+	padding: 24px 28px 22px;
 	border: 1px solid #d9e7ea;
 	border-radius: 12px;
 	background: #fff;
@@ -50,8 +50,8 @@
 
 .package-card-body {
 	display: grid;
-	grid-template-columns: minmax(0, 1.65fr) minmax(250px, 0.8fr);
-	gap: 36px;
+	grid-template-columns: minmax(0, 1.35fr) minmax(230px, 0.9fr);
+	gap: 22px;
 	align-items: stretch;
 }
 
@@ -180,7 +180,7 @@
 
 .package-card-includes {
 	border-left: 1px solid rgba(50, 70, 111, 0.28);
-	padding: 6px 0 4px 28px;
+	padding: 4px 0 4px 22px;
 }
 
 .package-card-includes .fl-module-content {
@@ -189,8 +189,10 @@
 
 .package-card-includes .fl-heading,
 .package-card-includes .fl-heading-text {
-	font-size: 17px !important;
+	font-size: 14px !important;
 	line-height: 1.35 !important;
+	font-weight: 600 !important;
+	text-transform: none !important;
 	text-align: left !important;
 }
 
