@@ -1,4 +1,8 @@
 /* Traffic + conversion comparison */
+.conversion-heading {
+	white-space: nowrap;
+}
+
 .traffic-conversion .fl-node-i2ufl3donhbj,
 .traffic-conversion .fl-node-yl47phwa2b0e {
 	width: 40%;
@@ -33,6 +37,10 @@
 }
 
 @media (max-width: 767px) {
+	.conversion-heading {
+		white-space: normal;
+	}
+
 	.traffic-conversion .fl-node-i2ufl3donhbj,
 	.traffic-conversion .fl-node-q1jm3cz59tos,
 	.traffic-conversion .fl-node-yl47phwa2b0e {
