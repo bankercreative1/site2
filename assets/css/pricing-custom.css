@@ -1,0 +1,47 @@
+/* Traffic + conversion comparison */
+.traffic-conversion .fl-node-i2ufl3donhbj,
+.traffic-conversion .fl-node-yl47phwa2b0e {
+	width: 40%;
+}
+
+.traffic-conversion .fl-node-q1jm3cz59tos {
+	width: 20%;
+}
+
+.traffic-conversion .fl-node-q1jm3cz59tos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#fl-main-content .traffic-conversion .fl-node-q1jm3cz59tos .fl-heading,
+#fl-main-content .traffic-conversion .fl-node-q1jm3cz59tos .fl-heading-text,
+#fl-main-content .traffic-conversion .fl-node-q1jm3cz59tos .alt-heading {
+	display: block;
+	font-size: 120px !important;
+	line-height: 1 !important;
+}
+
+.traffic-conversion .fl-node-i2ufl3donhbj .fl-heading-text,
+.traffic-conversion .fl-node-yl47phwa2b0e .fl-heading-text {
+	white-space: nowrap;
+}
+
+#fl-main-content .traffic-conversion .fl-rich-text p {
+	font-size: 20px !important;
+	line-height: 1.55 !important;
+}
+
+@media (max-width: 767px) {
+	.traffic-conversion .fl-node-i2ufl3donhbj,
+	.traffic-conversion .fl-node-q1jm3cz59tos,
+	.traffic-conversion .fl-node-yl47phwa2b0e {
+		width: 100%;
+	}
+
+	#fl-main-content .traffic-conversion .fl-node-q1jm3cz59tos .fl-heading,
+	#fl-main-content .traffic-conversion .fl-node-q1jm3cz59tos .fl-heading-text,
+	#fl-main-content .traffic-conversion .fl-node-q1jm3cz59tos .alt-heading {
+		font-size: 72px !important;
+	}
+}
