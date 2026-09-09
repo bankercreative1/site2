@@ -135,6 +135,12 @@
 	top: 3px;
 	left: 225px;
 	margin: 0 !important;
+	text-align: left !important;
+}
+
+#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-title-prefix,
+#fl-main-content .package-payment-options .col-pricing-bot .alt-heading {
+	text-align: left !important;
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-text-wrap {
