@@ -13,11 +13,6 @@
 	padding-bottom: 20px !important;
 }
 
-.conversion-outro > .fl-row-content-wrap {
-	padding-top: 10px !important;
-	padding-bottom: 55px !important;
-}
-
 .marketing-equation {
 	font-size: 20px !important;
 	line-height: 1.55 !important;
@@ -138,11 +133,6 @@ z-index: 11;
 	.traffic-conversion > .fl-row-content-wrap {
 		padding-top: 15px !important;
 		padding-bottom: 15px !important;
-	}
-
-	.conversion-outro > .fl-row-content-wrap {
-		padding-top: 5px !important;
-		padding-bottom: 40px !important;
 	}
 
 	.package-divider {
