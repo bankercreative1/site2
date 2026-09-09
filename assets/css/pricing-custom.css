@@ -10,7 +10,7 @@
 
 .traffic-conversion > .fl-row-content-wrap {
 	padding-top: 20px !important;
-	padding-bottom: 20px !important;
+	padding-bottom: 70px !important;
 }
 
 .marketing-equation {
@@ -21,7 +21,7 @@
 .package-card {
 	box-sizing: border-box;
 	width: 84%;
-	padding: 52px 52px 44px;
+	padding: 36px 40px 32px;
 	border: 1px solid #d9e7ea;
 	border-radius: 12px;
 	background: #fff;
@@ -29,7 +29,7 @@
 }
 
 .package-card-search {
-	margin: 20px auto 72px 0;
+	margin: 20px auto 72px 4%;
 }
 
 .package-card-website {
@@ -44,19 +44,21 @@
 
 .package-card .package-intro {
 	max-width: 760px;
-	margin: 0 0 34px;
+	margin: 0 0 22px;
 	text-align: left;
 }
 
 .package-payment-options {
 	display: block;
-	margin: 34px 0;
+	max-width: 880px;
+	margin: 22px 0;
 	border-top: 1px solid rgba(50, 70, 111, 0.18);
 	border-bottom: 1px solid rgba(50, 70, 111, 0.18);
 }
 
 .package-payment-options > .fl-col {
 	width: 100% !important;
+	float: none !important;
 	border-left: 0 !important;
 	border-bottom: 1px solid rgba(50, 70, 111, 0.18);
 }
@@ -67,8 +69,8 @@
 
 .package-payment-options > .fl-col > .fl-col-content {
 	box-sizing: border-box;
-	min-height: 112px;
-	padding: 22px 24px !important;
+	min-height: 0;
+	padding: 16px 0 !important;
 	background: transparent !important;
 }
 
@@ -77,6 +79,10 @@
 #fl-main-content .package-payment-options .uabb-infobox {
 	min-height: 0 !important;
 	height: auto !important;
+}
+
+#fl-main-content .package-payment-options .fl-module > .fl-module-content {
+	margin: 0 !important;
 }
 
 #fl-main-content .package-payment-options .col-pricing-top,
@@ -90,7 +96,7 @@
 }
 
 #fl-main-content .package-payment-options .col-pricing-top {
-	margin-bottom: 6px;
+	margin: 0 0 2px !important;
 	text-align: left;
 }
 
@@ -103,12 +109,14 @@
 #fl-main-content .package-payment-options .col-pricing-top .uabb-infobox-title-prefix {
 	font-size: 24px !important;
 	line-height: 1.2 !important;
+	margin: 0 !important;
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-content {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) auto;
-	gap: 20px;
+	grid-template-columns: minmax(0, 560px) auto;
+	justify-content: start;
+	gap: 28px;
 	align-items: center;
 }
 
@@ -123,6 +131,13 @@
 	grid-row: 1;
 	margin: 0 !important;
 	text-align: left;
+}
+
+#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-text,
+#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-text p {
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: left !important;
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .alt-heading {
@@ -232,12 +247,12 @@ z-index: 11;
 
 	.traffic-conversion > .fl-row-content-wrap {
 		padding-top: 15px !important;
-		padding-bottom: 15px !important;
+		padding-bottom: 45px !important;
 	}
 
 	.package-card {
 		width: 100%;
-		padding: 38px 24px 32px;
+		padding: 30px 22px 26px;
 	}
 
 	.package-card-search,
@@ -256,7 +271,7 @@ z-index: 11;
 
 	.package-payment-options > .fl-col > .fl-col-content {
 		min-height: 0;
-		padding: 20px 0 !important;
+		padding: 14px 0 !important;
 	}
 
 	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-content {
