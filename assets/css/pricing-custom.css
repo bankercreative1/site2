@@ -70,7 +70,7 @@
 .package-payment-options > .fl-col > .fl-col-content {
 	box-sizing: border-box;
 	min-height: 0;
-	padding: 16px 0 !important;
+	padding: 10px 0 !important;
 	background: transparent !important;
 }
 
@@ -96,7 +96,7 @@
 }
 
 #fl-main-content .package-payment-options .col-pricing-top {
-	margin: 0 0 2px !important;
+	margin: 0 !important;
 	text-align: left;
 }
 
@@ -113,22 +113,21 @@
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-content {
-	display: grid;
-	grid-template-columns: minmax(0, 560px) auto;
-	justify-content: start;
-	gap: 28px;
+	display: flex;
+	justify-content: flex-start;
+	gap: 24px;
 	align-items: center;
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-title-wrap {
-	grid-column: 2;
-	grid-row: 1;
+	flex: 0 0 auto;
+	order: 2;
 	margin: 0 !important;
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-text-wrap {
-	grid-column: 1;
-	grid-row: 1;
+	flex: 0 1 auto;
+	order: 1;
 	margin: 0 !important;
 	text-align: left;
 }
@@ -271,18 +270,16 @@ z-index: 11;
 
 	.package-payment-options > .fl-col > .fl-col-content {
 		min-height: 0;
-		padding: 14px 0 !important;
+		padding: 10px 0 !important;
 	}
 
 	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-content {
-		grid-template-columns: 1fr;
+		display: block;
 		gap: 6px;
 	}
 
 	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-title-wrap,
 	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-text-wrap {
-		grid-column: 1;
-		grid-row: auto;
 		text-align: left;
 	}
 
