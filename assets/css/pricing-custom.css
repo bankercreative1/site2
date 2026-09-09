@@ -49,23 +49,26 @@
 }
 
 .package-payment-options {
-	display: flex;
+	display: block;
 	margin: 34px 0;
 	border-top: 1px solid rgba(50, 70, 111, 0.18);
 	border-bottom: 1px solid rgba(50, 70, 111, 0.18);
 }
 
 .package-payment-options > .fl-col {
-	width: 33.333% !important;
+	width: 100% !important;
+	border-left: 0 !important;
+	border-bottom: 1px solid rgba(50, 70, 111, 0.18);
 }
 
-.package-payment-options > .fl-col + .fl-col {
-	border-left: 1px solid rgba(50, 70, 111, 0.18);
+.package-payment-options > .fl-col:last-child {
+	border-bottom: 0;
 }
 
 .package-payment-options > .fl-col > .fl-col-content {
-	height: 100%;
-	padding: 28px 24px !important;
+	box-sizing: border-box;
+	min-height: 112px;
+	padding: 22px 24px !important;
 	background: transparent !important;
 }
 
@@ -87,12 +90,32 @@
 }
 
 #fl-main-content .package-payment-options .col-pricing-top {
-	margin-bottom: 12px;
+	margin-bottom: 6px;
 }
 
 #fl-main-content .package-payment-options .col-pricing-top .uabb-infobox-title-prefix {
 	font-size: 24px !important;
 	line-height: 1.2 !important;
+}
+
+#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-content {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 20px;
+	align-items: center;
+}
+
+#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-title-wrap {
+	grid-column: 2;
+	grid-row: 1;
+	margin: 0 !important;
+}
+
+#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-text-wrap {
+	grid-column: 1;
+	grid-row: 1;
+	margin: 0 !important;
+	text-align: left;
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .alt-heading {
@@ -224,9 +247,21 @@ z-index: 11;
 		width: 100% !important;
 	}
 
-	.package-payment-options > .fl-col + .fl-col {
-		border-top: 1px solid rgba(50, 70, 111, 0.18);
-		border-left: 0;
+	.package-payment-options > .fl-col > .fl-col-content {
+		min-height: 0;
+		padding: 20px 0 !important;
+	}
+
+	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-content {
+		grid-template-columns: 1fr;
+		gap: 6px;
+	}
+
+	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-title-wrap,
+	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-text-wrap {
+		grid-column: 1;
+		grid-row: auto;
+		text-align: left;
 	}
 
 	.package-includes ul {
