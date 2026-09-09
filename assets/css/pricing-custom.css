@@ -91,6 +91,13 @@
 
 #fl-main-content .package-payment-options .col-pricing-top {
 	margin-bottom: 6px;
+	text-align: left;
+}
+
+#fl-main-content .package-payment-options .col-pricing-top .uabb-infobox,
+#fl-main-content .package-payment-options .col-pricing-top .uabb-infobox-title-wrap,
+#fl-main-content .package-payment-options .col-pricing-top .uabb-infobox-title-prefix {
+	text-align: left !important;
 }
 
 #fl-main-content .package-payment-options .col-pricing-top .uabb-infobox-title-prefix {
