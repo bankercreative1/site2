@@ -18,16 +18,86 @@
 	line-height: 1.55 !important;
 }
 
-.package-divider {
-	margin-top: 100px;
-	padding-top: 80px;
-	border-top: 2px solid rgba(50, 70, 111, 0.18);
-	text-align: center;
+.package-card {
+	box-sizing: border-box;
+	width: 84%;
+	padding: 52px 52px 44px;
+	border: 1px solid #d9e7ea;
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 12px 30px rgba(50, 70, 111, 0.1);
 }
 
-.package-divider .fl-rich-text {
-	max-width: 800px;
-	margin: 0 auto 40px;
+.package-card-search {
+	margin: 20px auto 72px 0;
+}
+
+.package-card-website {
+	margin: 0 0 80px auto;
+}
+
+.package-card h2,
+.package-card .fl-heading {
+	margin-top: 0;
+	text-align: left;
+}
+
+.package-card .package-intro {
+	max-width: 760px;
+	margin: 0 0 34px;
+	text-align: left;
+}
+
+.package-payment-options {
+	display: flex;
+	margin: 34px 0;
+	border-top: 1px solid rgba(50, 70, 111, 0.18);
+	border-bottom: 1px solid rgba(50, 70, 111, 0.18);
+}
+
+.package-payment-options > .fl-col {
+	width: 33.333% !important;
+}
+
+.package-payment-options > .fl-col + .fl-col {
+	border-left: 1px solid rgba(50, 70, 111, 0.18);
+}
+
+.package-payment-options > .fl-col > .fl-col-content {
+	height: 100%;
+	padding: 28px 24px !important;
+	background: transparent !important;
+}
+
+#fl-main-content .package-payment-options .fl-module,
+#fl-main-content .package-payment-options .fl-module-content,
+#fl-main-content .package-payment-options .uabb-infobox {
+	min-height: 0 !important;
+	height: auto !important;
+}
+
+#fl-main-content .package-payment-options .col-pricing-top,
+#fl-main-content .package-payment-options .col-pricing-bot,
+#fl-main-content .package-payment-options .uabb-infobox {
+	background: transparent !important;
+}
+
+#fl-main-content .package-payment-options .uabb-infobox {
+	padding: 0 !important;
+}
+
+#fl-main-content .package-payment-options .col-pricing-top {
+	margin-bottom: 12px;
+}
+
+#fl-main-content .package-payment-options .col-pricing-top .uabb-infobox-title-prefix {
+	font-size: 24px !important;
+	line-height: 1.2 !important;
+}
+
+#fl-main-content .package-payment-options .col-pricing-bot .alt-heading {
+	font-size: 34px !important;
+	white-space: nowrap;
 }
 
 .package-includes {
@@ -135,9 +205,28 @@ z-index: 11;
 		padding-bottom: 15px !important;
 	}
 
-	.package-divider {
-		margin-top: 60px;
-		padding-top: 50px;
+	.package-card {
+		width: 100%;
+		padding: 38px 24px 32px;
+	}
+
+	.package-card-search,
+	.package-card-website {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.package-payment-options {
+		display: block;
+	}
+
+	.package-payment-options > .fl-col {
+		width: 100% !important;
+	}
+
+	.package-payment-options > .fl-col + .fl-col {
+		border-top: 1px solid rgba(50, 70, 111, 0.18);
+		border-left: 0;
 	}
 
 	.package-includes ul {
