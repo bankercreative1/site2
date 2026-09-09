@@ -88,9 +88,195 @@ Do not lighten it back without re-measuring. On the navy footer, links use white
 with an underline rather than the accent, because the accent is only 1.91:1
 there.
 
+## The component library
+
+Ten reusable sections live in `components/`. Each one is a real block lifted
+from a real page, so it is already styled and already correct. Building a page
+means choosing from this list and changing the words. That is the whole job.
+
+`components/gallery.html` renders all ten with labels. Open it before you start
+so you can see the shapes rather than guess from names.
+
+### The catalogue
+
+Usage counts are how many places the block appears on the current 54-page site,
+which is a good proxy for how safe and how "house" a choice is.
+
+| component | used | shape | copy slots |
+|---|---|---|---|
+| `cta-band` | 21 | Full-width band, centred heading over one button. The standard closer. | heading, button label, link |
+| `text-two-column` | 18 | Two columns of body copy under a heading. | heading, 2 text blocks |
+| `section-text-cta` | 13 | Heading, a paragraph, then a button. A closer that needs a sentence first. | heading, paragraph, button label, link |
+| `card-grid` | 10 | Heading over three priced cards, each with its own subhead and copy, one button underneath. | section heading, 3 x (card title, price, description), button |
+| `text-with-checklist` | 9 | Two columns: heading and copy on the left, a three-item checklist on the right. | heading, paragraph, 3 list items |
+| `heading-checklist` | 5 | Heading beside a three-item checklist, no body copy. Tighter than the above. | heading, 3 list items |
+| `heading-pair` | 3 | A heading with a second, smaller heading under it. Page opener. | 2 headings |
+| `heading-text` | 2 | A heading with a paragraph under it. | heading, paragraph |
+| `three-column-text` | 2 | Two stacked headings over three columns of copy. | 2 headings, 3 text blocks |
+| `heading-only` | 2 | A single heading on a background. Thin page opener. | heading |
+
+Checklists are fixed at three items and card grids at three cards, because that
+is what the CSS was generated for. Adding a fourth will not be styled. If a
+wireframe needs four, that is a new component: build it, verify it, add it here.
+
+### How to build a page
+
+Copy `components/<name>.html` into your page in the order the wireframe calls
+for, then change the words. Do not touch anything else in the markup.
+
+The page must have this structure. All three parts are load-bearing:
+
+```html
+<body class="fl-framework-base fl-preset-default fl-full-width fl-builder">
+  <div class="fl-page">
+    <div id="fl-main-content" class="fl-page-content">
+      <div class="fl-builder-content fl-builder-content-primary">
+        <!-- components go here, one after another -->
+      </div>
+    </div>
+  </div>
+</body>
+```
+
+Note the nesting order: `.fl-page` is **outside** `#fl-main-content`, not
+inside. Getting it backwards does not throw an error, it just renders wrong.
+
+The wrappers, and what each one costs if you omit it:
+
+- **`.fl-builder-content`** — every rule in the stylesheet is written
+  `.fl-builder-content .fl-node-X ...`. Without this ancestor almost nothing
+  matches. Measured cost of omitting it: 132 wrong styles across the ten
+  components.
+- **`.fl-page`** — some responsive rules only reach the element through a
+  `.fl-page` ancestor, and without it they lose on specificity to the desktop
+  rule. Desktop looks fine and **mobile breaks**, which is the worst way for a
+  bug to behave. Measured cost: 6 wrong styles at 390px, 0 at 1440px.
+- **`fl-full-width` on `<body>`** — without it the theme falls back to a boxed
+  layout and every full-width row renders 980px wide instead of spanning the
+  1440px viewport. This one is worth dwelling on: it is glaringly obvious once
+  you know to look, and it went unnoticed in the component gallery for hours
+  because the gate only compared paint properties and screenshots of boxed
+  content look plausible. Width is now checked.
+
+### Stylesheets a new page must load
+
+In this order. The order is not cosmetic.
+
+```html
+<link rel="stylesheet" href="/assets/css/self-hosted-fonts.css">
+<link rel="stylesheet" href="/assets/css/design-system.css">
+<link rel="stylesheet" href="/assets/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/components-base.css">   <!-- see note -->
+<link rel="stylesheet" href="/assets/css/229cc1f30727981437e43d0161196a1a-layout-bundle.css">
+<link rel="stylesheet" href="/assets/css/jquery.magnificpopup.min.css">
+<link rel="stylesheet" href="/assets/css/base.min.css">
+<link rel="stylesheet" href="/assets/css/skin-6a8f33605af89.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/site-custom.css">      <!-- see note -->
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/type-scale.css">
+```
+
+Two files do the component work and a new page needs **both**:
+
+- `components-base.css` is the page-builder module framework: buttons, rows,
+  columns, spacing. It must load **before** `skin-*.css`, in the slot an
+  existing page's `NNNN-layout.css` occupies. Load it later and it overrides the
+  skin's responsive rules, which breaks mobile only. Measured: 6 wrong styles at
+  390px if misplaced.
+- `components.css` carries the per-component styling and loads near the end.
+
+`site-custom.css` is the third one a new page needs, and it is the least
+obvious. The site's typography is not in any linked stylesheet: it lives in an
+inline `<style>` block repeated on all 54 existing pages, and it is what
+assigns `circe-rounded` to h1-h3 and `circe` to h4 and paragraphs. A page that
+links every stylesheet above but omits this renders in Helvetica and Montserrat
+and looks obviously wrong. That block is extracted to `site-custom.css` so new
+pages can link it in one line.
+
+Existing pages still carry their inline copy and were deliberately left alone.
+That means a change to this CSS currently has to be made in 54 places. Switching
+those pages over to the linked file is a worthwhile cleanup and has not been
+done.
+
+Do **not** add an existing page's `NNNN-layout.css` to a new page. Those are
+generated per page and carry another page's node styling.
+
+### The node hashes
+
+Components are keyed on class names like `fl-node-t4ncwfyvr7l6`. They look like
+noise and they are the entire styling mechanism. Never rename or remove one.
+
+**Using the same component twice on one page is safe.** Tested: two copies of
+`cta-band`, both rendered identically. CSS classes are not ids and repeat
+happily. Change the words in each copy independently.
+
+### Verifying your page
+
+From `~/Claude Code/site-migration-skills/bmg-static-site-build/`:
+
+```
+node scripts/verify-components.mjs --site ~/"Claude Code/siteflyer-static" --page /your-new-page/
+```
+
+This compares every component on your page, property by property, against the
+same component on the page it came from. A pass means your page renders it
+exactly as the original does.
+
+```
+RESULT: PASS — every component paints identically outside its source page.
+```
+
+Anything else is a real problem. The usual cause is a missing wrapper or a
+stylesheet in the wrong order, not a missing rule. **Check the ancestors and the
+load order before you conclude something is absent** — that mistake has been
+made four times on this site.
+
+Run it at mobile too, because wrapper bugs hide at desktop width:
+
+```
+node scripts/verify-components.mjs --site ~/"Claude Code/siteflyer-static" --page /your-new-page/ --width 390 --height 844
+```
+
+"Tier B" differences are reported but do not fail. They are container-dependent
+geometry, usually sub-pixel. Ignore them unless something looks visibly wrong.
+
+### A worked example
+
+Wireframe: *page title, then a short pitch, then three benefits, then a closer
+with a button.*
+
+| wireframe line | component |
+|---|---|
+| page title | `heading-pair` |
+| short pitch | `heading-text` |
+| three benefits | `text-with-checklist` |
+| closer with button | `section-text-cta` |
+
+Copy those four files in that order into the wrapper structure above, change the
+words, run the verifier at both widths. Nothing else.
+
+That page exists: `components/example-page.html`. It was built from these
+instructions and nothing else, then verified at 1440, 992, 767 and 390px with
+zero differences. Open it next to the gallery, or copy it as a starting point.
+
+If you follow this section and your page fails, the instructions are wrong and
+should be fixed rather than worked around. That has already happened twice: the
+first version of this section omitted `site-custom.css` and had the wrapper
+nesting backwards, and a page built from it rendered in the wrong typeface at
+980px wide.
+
+If a wireframe asks for a shape the catalogue does not have, do not improvise
+CSS. Build the component properly, verify it, and add a row to the table above
+so the vocabulary grows on purpose instead of by accident.
+
 ## Things that will break if you touch them
 
 - **`fl-node-*` class names.** Renaming or removing one unstyles that element.
+- **The `.fl-page` and `.fl-builder-content` wrappers.** Removing either
+  unstyles whole components. `.fl-page` breaks mobile only, so it looks fine
+  on your screen and is broken on a phone.
 - **`<script type="application/ld+json">` blocks.** That is structured data for
   search engines, not tracking. Deleting one loses schema.
 - **The inline `<script>` near `</head>`.** It restores behaviours the page

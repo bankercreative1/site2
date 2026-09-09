@@ -1,0 +1,291 @@
+/* The site's custom CSS. Identical inline <style> block on all 54
+   existing pages; extracted here so a NEW page can link it instead of
+   copying 34KB of inline head markup. It carries the typography
+   assignment (h1-h3 circe-rounded, h4/p circe), .alt-heading, .link,
+   z-index helpers and sticky columns.
+
+   Existing pages still use their inline copy and are untouched. */
+
+/*General*/
+.link {
+	color: #32466f;
+	text-decoration: underline !important;
+}
+
+.link:hover {
+	color: #d63011;
+	text-decoration: none !important;
+}
+
+a span {
+	transition: all .3s !important;
+}
+
+/*Z-index*/
+.top-layer {
+	z-index: 99;
+  position: relative;
+}
+
+.middle-layer {
+	z-index: 11;
+  position: relative;
+}
+
+.bottom-layer {
+	z-index: 0;
+  position: relative;
+}
+
+/*Sticky Column*/
+@media (min-width: 767px) {
+	.sticky {
+		position: sticky;
+		position: -webkit-sticky;
+		top: 100px; 
+	}
+}
+
+/*Justify Text*/
+.justify-text {
+  text-align: justify !important;
+}
+
+.justify-text:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+/*Captcha Mobile*/
+@media only screen and (max-width: 500px){.ginput_recaptcha {
+    transform:scale(0.77);
+    transform-origin:0 0;
+	}
+}
+
+/*Navigation*/
+.menu-item {
+	font-family: "circe", sans-serif;
+	font-weight: 100;
+	letter-spacing: 1.5px
+}
+
+.menu-cta a {
+	padding-left: 20px !important;
+	border-left: 4px #32466f solid;
+}
+
+
+.menu-cta a span {
+	border-bottom: 4px #d63011 solid;
+	transition: all .3s;
+}
+
+
+.menu-cta a span:hover {
+	border-bottom: solid 4px #32466f;
+}
+
+/*Headings*/
+h1, h2, h3 {
+	font-family: "circe-rounded", sans-serif;
+	font-weight: 800;
+}
+
+h4, p {
+	font-family: "circe", sans-serif !important;
+}
+
+h4 {
+	font-weight: 500 !important;
+}
+
+p {
+	font-weight: 100;
+}
+
+.alt-heading {
+	font-family: "circe-slab-c", serif;
+	font-weight: 100;
+	color: #d63011;
+}
+
+.circe-slab-c {
+	font-family: "circe-slab-c", serif;
+	font-weight: 100;
+}
+
+.sml-title {
+	font-size: 20px;
+	color: #d63011;
+}
+
+.separator {
+	margin: 0 0 4px 10px; 
+	width: 85%;
+}
+
+ul, li {
+	font-family: circe, sans-serif !important;
+}
+
+@media (max-width: 959px){
+	.sml-title {
+		font-size: 18px;
+	}
+	.separator {
+		width: 75%;
+	}
+}
+
+@media (max-width: 393px){
+	.separator {
+		width: 65%;
+	}
+}
+
+.cta, .text, a.pp-button {
+	font-family: "circe", sans-serif !important;
+}
+
+.cta > div > div > a.fl-button:hover {
+	border-color: #32466F !important;
+}
+
+/*Home*/
+@media (max-width: 2400px){
+	.hero-left .fl-col-content {
+		padding-left: 40% !important;
+	}
+
+	.hero-right .fl-col-content {
+		background-position: -100% 0% !important;
+	}
+}
+
+@media (max-width: 2200px){
+	.hero-left .fl-col-content {
+		padding-left: 32% !important;
+	}
+	
+	.hero-right .fl-col-content {
+		background-position: -20% 0% !important;
+	}
+}
+
+@media (max-width: 1920px){
+	.hero-left .fl-col-content {
+		padding-left: 26% !important;
+	}
+	
+	.hero-right .fl-col-content {
+		background-position: 0% 0% !important;
+	}
+}
+
+@media (max-width: 1800px){
+	.hero-left .fl-col-content {
+		padding-left: 22% !important;
+	}
+}
+
+@media (max-width: 1710px){
+	.hero-left .fl-col-content {
+		padding-left: 20% !important;
+	}
+}
+
+@media (max-width: 1670px){
+	.hero-left .fl-col-content {
+		padding-left: 18% !important;
+	}
+}
+
+@media (max-width: 1627px){
+	.hero-left .fl-col-content {
+		padding-left: 15% !important;
+	}
+}
+
+@media (max-width: 1570px){
+	.hero-left .fl-col-content {
+		padding-left: 10% !important;
+	}
+}
+
+@media (max-width: 1482px){
+	.hero-left .fl-col-content {
+		padding-left: 5% !important;
+	}
+}
+
+@media (max-width: 1405px){
+	.hero-left .fl-col-content {
+		padding-left: 0% !important;
+	}
+}
+
+@media (max-width: 2200px) {
+	.value-prop > .fl-col-content {
+		padding-right: 19% !important; 
+		padding-left: 19% !important;
+	}
+}
+
+@media (max-width: 1920px) {
+	.value-prop > .fl-col-content {
+		padding-right: 15% !important; 
+		padding-left: 15% !important;
+	}
+}
+
+@media (max-width: 1750px) {
+	.value-prop > .fl-col-content {
+		padding-right: 13% !important; 
+		padding-left: 13% !important;
+	}
+}
+
+@media (max-width: 1620px) {
+	.value-prop > .fl-col-content {
+		padding-right: 8% !important; 
+		padding-left: 8% !important;
+	}
+}
+
+@media (max-width: 1500px) {
+	.value-prop > .fl-col-content {
+		padding-right: 5% !important; 
+		padding-left: 5% !important;
+	}
+}
+
+@media (max-width: 1450px) {
+	.value-prop > .fl-col-content {
+		padding-right:0% !important; 
+		padding-left: 0% !important;
+	}
+}
+
+.col-pricing-top div {
+	border-radius: 10px 10px 0 0;
+}
+
+.col-pricing-bot div {
+	border-radius: 0 0 10px 10px;
+}
+
+/*Case Studies*/
+.pp-content-post .pp-more-link-button:hover {
+	text-decoration: none !important;
+}
+
+/*Footer*/
+.ft-link {
+	color: #fff;
+}
+
+.ft-link:hover {
+	color: #d63011 !important;
+}
