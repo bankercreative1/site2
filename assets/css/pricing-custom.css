@@ -133,7 +133,7 @@
 #fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-title-wrap {
 	position: absolute;
 	top: 3px;
-	left: 225px;
+	left: 265px;
 	margin: 0 !important;
 	text-align: left !important;
 }
@@ -145,7 +145,7 @@
 
 #fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-text-wrap {
 	display: block;
-	max-width: 220px;
+	max-width: 260px;
 	margin: 0 !important;
 	text-align: left;
 }
