@@ -43,24 +43,34 @@
 }
 
 .package-card .package-intro {
-	max-width: 760px;
+	max-width: 900px;
 	margin: 0 0 22px;
 	text-align: left;
 }
 
+.package-card-body {
+	display: grid;
+	grid-template-columns: minmax(0, 1.65fr) minmax(250px, 0.8fr);
+	gap: 36px;
+	align-items: stretch;
+}
+
+.package-card-main {
+	min-width: 0;
+}
+
 .package-payment-options {
 	display: block;
-	max-width: 880px;
-	margin: 22px 0;
-	border-top: 1px solid rgba(50, 70, 111, 0.18);
-	border-bottom: 1px solid rgba(50, 70, 111, 0.18);
+	margin: 4px 0 18px;
+	border: 0;
 }
 
 .package-payment-options > .fl-col {
+	display: block !important;
 	width: 100% !important;
 	float: none !important;
 	border-left: 0 !important;
-	border-bottom: 1px solid rgba(50, 70, 111, 0.18);
+	border-bottom: 0;
 }
 
 .package-payment-options > .fl-col:last-child {
@@ -70,7 +80,8 @@
 .package-payment-options > .fl-col > .fl-col-content {
 	box-sizing: border-box;
 	min-height: 0;
-	padding: 10px 0 !important;
+	position: relative;
+	padding: 7px 190px 7px 0 !important;
 	background: transparent !important;
 }
 
@@ -113,21 +124,19 @@
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-content {
-	display: flex;
-	justify-content: flex-start;
-	gap: 24px;
-	align-items: center;
+	display: block;
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-title-wrap {
-	flex: 0 0 auto;
-	order: 2;
+	position: absolute;
+	top: 7px;
+	left: 245px;
 	margin: 0 !important;
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-text-wrap {
-	flex: 0 1 auto;
-	order: 1;
+	display: block;
+	max-width: 220px;
 	margin: 0 !important;
 	text-align: left;
 }
@@ -140,19 +149,51 @@
 }
 
 #fl-main-content .package-payment-options .col-pricing-bot .alt-heading {
-	font-size: 34px !important;
+	font-size: 24px !important;
 	white-space: nowrap;
 }
 
+#fl-main-content .package-payment-options .col-pricing-bot .alt-heading::before {
+	content: "—";
+	margin-right: 8px;
+	color: #32466f;
+}
+
+.package-card-main > .cta .fl-module-content {
+	margin: 8px 0 0 !important;
+}
+
+.package-card-main > .cta .fl-button-wrap {
+	text-align: left !important;
+}
+
+.package-card-main > .cta .fl-button {
+	width: auto !important;
+	min-width: 180px;
+}
+
+.package-card-includes {
+	border-left: 1px solid rgba(50, 70, 111, 0.28);
+	padding: 12px 0 8px 34px;
+}
+
+.package-card-includes .fl-module-content {
+	margin: 0 0 14px !important;
+}
+
+.package-card-includes .fl-heading,
+.package-card-includes .fl-heading-text {
+	font-size: 17px !important;
+	line-height: 1.35 !important;
+	text-align: left !important;
+}
+
 .package-includes {
-	max-width: 820px;
-	margin: 20px auto 35px;
+	margin: 0;
 }
 
 .package-includes ul {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 12px 28px;
+	display: block;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -160,9 +201,10 @@
 
 .package-includes li {
 	position: relative;
-	padding-left: 28px;
-	font-size: 18px;
-	line-height: 1.45;
+	margin-bottom: 12px;
+	padding-left: 22px;
+	font-size: 15px;
+	line-height: 1.4;
 }
 
 .package-includes li::before {
@@ -254,6 +296,10 @@ z-index: 11;
 		padding: 30px 22px 26px;
 	}
 
+	.package-card-body {
+		display: block;
+	}
+
 	.package-card-search,
 	.package-card-website {
 		margin-right: 0;
@@ -270,21 +316,28 @@ z-index: 11;
 
 	.package-payment-options > .fl-col > .fl-col-content {
 		min-height: 0;
-		padding: 10px 0 !important;
+		padding: 9px 0 !important;
 	}
 
 	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-content {
 		display: block;
-		gap: 6px;
 	}
 
-	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-title-wrap,
+	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-title-wrap {
+		position: static;
+		margin-top: 3px !important;
+	}
+
 	#fl-main-content .package-payment-options .col-pricing-bot .uabb-infobox-text-wrap {
+		max-width: none;
 		text-align: left;
 	}
 
-	.package-includes ul {
-		grid-template-columns: 1fr;
+	.package-card-includes {
+		margin-top: 26px;
+		border-top: 1px solid rgba(50, 70, 111, 0.28);
+		border-left: 0;
+		padding: 24px 0 0;
 	}
 
 	.traffic-conversion .fl-node-i2ufl3donhbj,
