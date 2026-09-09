@@ -538,32 +538,52 @@ document.addEventListener("DOMContentLoaded",function(){
   if(hd){var on=function(){hd.classList.toggle("sf-stuck",window.scrollY>60)};
     on();window.addEventListener("scroll",on,{passive:true});}
 
-  /* b) PowerPack FAQ accordions. Toggle PP's own active class so its CSS applies.
-        Adds aria-expanded, which PP's JS used to set and the markup lacks. */
-  document.querySelectorAll(".pp-accordion").forEach(function(acc){
-    var single=acc.classList.contains("pp-accordion-collapse");
-    var items=[].slice.call(acc.querySelectorAll(".pp-accordion-item"));
-    items.forEach(function(item){
-      var btn=item.querySelector(".pp-accordion-button");
-      var panel=item.querySelector(".pp-accordion-content");
-      if(!btn||!panel)return;
-      var set=function(open){
-        item.classList.toggle("pp-accordion-item-active",open);
-        btn.setAttribute("aria-expanded",open?"true":"false");
-      };
-      set(false);
-      var toggle=function(){
-        var willOpen=btn.getAttribute("aria-expanded")!=="true";
-        if(willOpen&&single) items.forEach(function(o){
-          if(o!==item){o.classList.remove("pp-accordion-item-active");
-            var b=o.querySelector(".pp-accordion-button");
-            if(b)b.setAttribute("aria-expanded","false");}
+  /* b) PowerPack collapsibles. TWO module families ship on this site with the
+        same shape but different class prefixes: pp-accordion (most pages) and
+        pp-faq (/pricing/). Only the first was handled for a while and the
+        pricing FAQ sat dead, so this is driven off a table now: adding a
+        third family means adding a row, not writing another block.
+        pp-faq differs in one way that matters: its CSS has no rule to reveal
+        an open panel (the builder's JS set display inline), so we do too. */
+  [
+    {root:"pp-accordion", single:"pp-accordion-collapse", item:"pp-accordion-item",
+     btn:"pp-accordion-button", panel:"pp-accordion-content",
+     active:"pp-accordion-item-active", setsDisplay:false},
+    {root:"pp-faq", single:"pp-faq-collapse", item:"pp-faq-item",
+     btn:"pp-faq-button", panel:"pp-faq-content",
+     active:"pp-faq-item-active", setsDisplay:true}
+  ].forEach(function(K){
+    document.querySelectorAll("."+K.root).forEach(function(acc){
+      var single=acc.classList.contains(K.single);
+      var items=[].slice.call(acc.querySelectorAll("."+K.item));
+      items.forEach(function(item){
+        var btn=item.querySelector("."+K.btn);
+        var panel=item.querySelector("."+K.panel);
+        if(!btn||!panel)return;
+        var set=function(open){
+          item.classList.toggle(K.active,open);
+          btn.setAttribute("aria-expanded",open?"true":"false");
+          panel.setAttribute("aria-hidden",open?"false":"true");
+          if(K.setsDisplay) panel.style.display=open?"block":"";
+        };
+        if(!btn.hasAttribute("role")) btn.setAttribute("role","button");
+        if(!btn.hasAttribute("tabindex")) btn.setAttribute("tabindex","0");
+        set(false);
+        var toggle=function(){
+          var willOpen=btn.getAttribute("aria-expanded")!=="true";
+          if(willOpen&&single) items.forEach(function(o){
+            if(o===item)return;
+            o.classList.remove(K.active);
+            var b=o.querySelector("."+K.btn), p=o.querySelector("."+K.panel);
+            if(b)b.setAttribute("aria-expanded","false");
+            if(p){p.setAttribute("aria-hidden","true"); if(K.setsDisplay)p.style.display="";}
+          });
+          set(willOpen);
+        };
+        btn.addEventListener("click",toggle);
+        btn.addEventListener("keydown",function(e){
+          if(e.key==="Enter"||e.key===" "||e.key==="Spacebar"){e.preventDefault();toggle();}
         });
-        set(willOpen);
-      };
-      btn.addEventListener("click",toggle);
-      btn.addEventListener("keydown",function(e){
-        if(e.key==="Enter"||e.key===" "||e.key==="Spacebar"){e.preventDefault();toggle();}
       });
     });
   });
