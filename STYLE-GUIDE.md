@@ -114,10 +114,43 @@ which is a good proxy for how safe and how "house" a choice is.
 | `heading-text` | 2 | A heading with a paragraph under it. | heading, paragraph |
 | `three-column-text` | 2 | Two stacked headings over three columns of copy. | 2 headings, 3 text blocks |
 | `heading-only` | 2 | A single heading on a background. Thin page opener. | heading |
+| `price-columns` | 1 | Three price cards side by side: label, name, price, description. | 3 x (label, name, price, description) |
+| `features-optional` | 1 | Two boxes with red headers: what is included, and paid add-ons. | 2 x (label, title, list) |
+| `fine-print` | 1 | An intro heading, then repeated subsections of heading plus detail. | intro, then heading + text per subsection |
+| `faq` | 1 | Collapsible question list. Click or Enter opens one answer at a time. | heading, then question + answer per item |
 
-Checklists are fixed at three items and card grids at three cards, because that
-is what the CSS was generated for. Adding a fourth will not be styled. If a
-wireframe needs four, that is a new component: build it, verify it, add it here.
+## The rule when something does not fit
+
+**Never stop and ask. Build the page.**
+
+A wireframe written by a person will always contain something the catalogue
+does not match exactly. That is normal and it is not a blocker. Pick the
+closest component and keep going.
+
+You may:
+
+- change any words
+- add or remove repeated items in a list, an FAQ, or a set of subsections
+- use the same component more than once on a page
+- leave a slot empty if the wireframe has nothing for it
+
+You may not:
+
+- write new CSS
+- rename or remove `fl-node-*` classes
+- hand-write markup for a shape that is not in the catalogue
+
+Adding list items is safe and has been tested: a three-item checklist extended
+to five rendered all five identically, same size, colour and icon. Copy an
+existing item and change its words. The same applies to FAQ entries and
+fine-print subsections.
+
+If a wireframe section genuinely has no reasonable match, use the nearest
+component anyway and add a line to a **Compromises** list at the bottom of your
+final message. Do not stop the build to raise it.
+
+The verifier is what catches real breakage, not your caution. Build first,
+verify, then report.
 
 ### How to build a page
 
@@ -267,9 +300,8 @@ first version of this section omitted `site-custom.css` and had the wrapper
 nesting backwards, and a page built from it rendered in the wrong typeface at
 980px wide.
 
-If a wireframe asks for a shape the catalogue does not have, do not improvise
-CSS. Build the component properly, verify it, and add a row to the table above
-so the vocabulary grows on purpose instead of by accident.
+If a wireframe asks for a shape the catalogue does not have, use the nearest
+component and note the compromise. Do not improvise CSS and do not stop.
 
 ## Things that will break if you touch them
 

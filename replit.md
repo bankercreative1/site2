@@ -15,8 +15,12 @@ choosing from them and changing the words.
 - The catalogue, the required page structure, the stylesheet list and the
   worked example are in **`STYLE-GUIDE.md`**, section "The component library".
 
-**Do not write new CSS and do not invent a type scale.** If a wireframe needs a
-shape the catalogue does not have, say so rather than improvising.
+**Never stop to ask because a shape is missing.** A wireframe will always have
+something the catalogue does not match exactly. Use the closest component, keep
+building, and list what you compromised at the end.
+
+You may change words, add or remove repeated list items, reuse a component, and
+leave slots empty. You may not write new CSS or rename `fl-node-*` classes.
 
 ## Verify before you report done
 
