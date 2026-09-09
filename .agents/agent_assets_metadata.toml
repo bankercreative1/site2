@@ -1,0 +1,44 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "WMeReILg5tqCERbc_YUjL"
+uri = "file://screenshots/pricing-annotation-1-top.jpg"
+type = "image"
+title = "Pricing page — hero and strategy"
+description = "Current live pricing page: hero and Traffic + Conversion introduction."
+logical_id = "e8712db6-912c-4cc1-a266-4672bdb44e3c"
+content_hash = "sha256:d97b13f5e9a597edc216fe79faedb5d3b0e4de1a2433e5faeb6d0f652cce203a"
+size = 69207
+mtime_ms = 1788970519952
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:a73ba315-22c0-45d8-a967-1f47130acecb/e8712db6-912c-4cc1-a266-4672bdb44e3c/aab087d9-b554-42e7-9337-7d4199b8d44e"
+storage_version_token = "1788970990773972"
+content_type = "image/jpeg"
+
+[[outputs]]
+id = "Obz56YJQdc-oihCcXBr5q"
+uri = "file://screenshots/pricing-annotation-2-packages.jpg"
+type = "image"
+title = "Pricing page — Website + Search"
+description = "Current live pricing page: Website + Search package and payment options."
+logical_id = "a65411f3-117b-4ae1-8470-5741ece0f8d2"
+content_hash = "sha256:1a0c3407ed282d07a4771d4cdc5c6b6b980cde99e32a26398f10570412b966c8"
+size = 90266
+mtime_ms = 1788970521716
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:a73ba315-22c0-45d8-a967-1f47130acecb/a65411f3-117b-4ae1-8470-5741ece0f8d2/445c032c-b2ca-471c-bc90-09036078e26d"
+storage_version_token = "1788970991484148"
+content_type = "image/jpeg"
+
+[[outputs]]
+id = "aJvDqVcTTIQfWNAAF57cB"
+uri = "file://screenshots/pricing-annotation-3-lower.jpg"
+type = "image"
+title = "Pricing page — inclusions and add-ons"
+description = "Current live pricing page: Website inclusions and retained add-ons area."
+logical_id = "d9ece646-c0f6-43a9-8d5f-da7760dcc83b"
+content_hash = "sha256:e49b66285c10b91fcce9f5924ec5902214f454854c0e1301cdbe333d71ae73d9"
+size = 103884
+mtime_ms = 1788970523568
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:a73ba315-22c0-45d8-a967-1f47130acecb/d9ece646-c0f6-43a9-8d5f-da7760dcc83b/1c41bd8b-6c6f-4899-bb95-a7b7036fe3f9"
+storage_version_token = "1788970992111816"
+content_type = "image/jpeg"
