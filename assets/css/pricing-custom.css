@@ -60,18 +60,19 @@
 }
 
 .package-payment-options {
-	display: block;
+display: block !important;
 	margin: 0 0 12px -20px;
 	border: 0;
 }
 
 .package-payment-options > .fl-col {
 	display: block !important;
+flex: none !important;
 	width: 100% !important;
 	float: none !important;
 	min-height: 0 !important;
 	height: auto !important;
-	margin: 0 0 4px !important;
+margin: 0 0 16px !important;
 	border-left: 0 !important;
 	border-bottom: 0;
 }
