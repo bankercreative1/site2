@@ -1,2 +1,4 @@
 - [Static preview restarts](static-preview-restarts.md) — do not restart the static workflow for HTML/CSS edits; restarts can disconnect the embedded Preview pane.
 - [Homepage type overrides](homepage-type-overrides.md) — verify computed styles at the target viewport; ID-level type rules can defeat later class-based overrides.
+- [Imported hero spacing](imported-hero-spacing.md) — wide-screen padding can collapse hero content even when its outer width and child width rules appear correct.
+- [Homepage responsive system](homepage-responsive-system.md) — use shared fluid layout and type rules; avoid accumulating fixes for individual viewport widths.
