@@ -70,31 +70,28 @@
 	width: 30px;
 }
 
-@media (min-width: 993px) {
+@media (min-width: 768px) {
+	.fl-node-rdlvxqz32f9e {
+		display: grid;
+		grid-template-columns: minmax(0, 42%) minmax(0, 58%);
+	}
+
 	.fl-node-5mk8nfegiro2 {
-		width: 36%;
+		width: 100% !important;
 	}
 
 	.fl-node-rfa3bulw4p29 {
-		width: 64%;
+		width: 100% !important;
 	}
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-	.fl-node-5mk8nfegiro2 {
-		width: 38% !important;
-	}
-
-	.fl-node-rfa3bulw4p29 {
-		width: 62% !important;
-	}
-
+@media (min-width: 768px) and (max-width: 1200px) {
 	.fl-node-lxmsuna9zyjc .fl-heading {
-		font-size: 30px;
+		font-size: 28px;
 	}
 
 	.fl-node-i9ywhs1f5tpm .pp-list-item-text {
-		font-size: 16px;
+		font-size: 14px;
 	}
 }
 
