@@ -348,7 +348,7 @@ font-size: var(--sf-home-hero-size) !important;
 
 #homepage-feature-cards > .fl-row-content-wrap > .fl-row-content {
 	display: grid;
-	gap: 58px 64px;
+	gap: 12px;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	max-width: 1180px;
 }
@@ -358,17 +358,46 @@ font-size: var(--sf-home-hero-size) !important;
 }
 
 #homepage-feature-cards .value-props {
+	margin: 0 !important;
 	min-width: 0;
+	padding: 0 !important;
 	width: 100% !important;
 }
 
 #homepage-feature-cards .value-props > .fl-col-content {
+	background-color: #f7f8fa !important;
+	background-image: none !important;
+	border: 1px solid #e3e7ee;
+	border-radius: 6px;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	min-height: 164px;
-	padding: 0 96px 28px 0 !important;
+	min-height: 190px;
+	padding: 28px 112px 28px 28px !important;
+	position: relative;
+}
+
+#homepage-feature-cards .homepage-feature-icon {
+	align-items: center;
+	border: 2px solid #d63011;
+	border-radius: 50%;
+	color: #d63011;
+	display: flex;
+	font-size: 23px;
+	font-weight: 700;
+	height: 58px;
+	justify-content: center;
+	line-height: 1;
+	position: absolute;
+	right: 28px;
+	top: 28px;
+	width: 58px;
+}
+
+#homepage-feature-cards .homepage-feature-icon--letters {
+	font-family: Arial, sans-serif;
+	font-size: 20px;
 }
 
 #homepage-feature-cards .value-props .fl-module,
@@ -377,22 +406,31 @@ font-size: var(--sf-home-hero-size) !important;
 }
 
 #homepage-feature-cards .value-props .fl-module-heading {
-	border-bottom: 2px solid #d63011;
-	margin-bottom: 14px !important;
-	padding: 0 0 10px;
+	border: 0;
+	margin-bottom: 12px !important;
+	padding: 0;
+}
+
+#homepage-feature-cards .value-props .fl-module-heading::after {
+	background: #d63011;
+	content: "";
+	display: block;
+	height: 2px;
+	margin-top: 12px;
+	width: 48px;
 }
 
 #homepage-feature-cards .value-props h3.fl-heading,
 #homepage-feature-cards .value-props h3.fl-heading .fl-heading-text,
 #homepage-feature-cards .value-props h3.fl-heading .alt-heading {
-	font-size: 28px !important;
+	font-size: clamp(22px, 1.8vw, 26px) !important;
 	line-height: 1.08 !important;
 }
 
 #homepage-feature-cards .value-props .fl-rich-text,
 #homepage-feature-cards .value-props .fl-rich-text p {
-	font-size: 17px;
-	line-height: 1.45;
+	font-size: 16px !important;
+	line-height: 1.5 !important;
 	margin: 0;
 }
 
@@ -601,8 +639,16 @@ font-size: var(--sf-home-hero-size) !important;
 	}
 
 	#homepage-feature-cards .value-props > .fl-col-content {
-		min-height: 0;
-		padding-right: 78px !important;
+		min-height: 160px;
+		padding: 22px 88px 22px 22px !important;
+	}
+
+	#homepage-feature-cards .homepage-feature-icon {
+		font-size: 19px;
+		height: 48px;
+		right: 20px;
+		top: 20px;
+		width: 48px;
 	}
 
 	.homepage-pricing {
