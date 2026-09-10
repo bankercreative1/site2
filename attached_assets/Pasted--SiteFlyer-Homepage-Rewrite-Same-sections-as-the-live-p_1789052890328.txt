@@ -1,0 +1,223 @@
+# SiteFlyer Homepage Rewrite
+
+*Same sections as the live page, new copy. Built from the SiteFlyer Messaging, Positioning, and 7/22 Pricing Strategy. Messaging language is lifted where possible. Flags and open items are collected in the appendix; [BRACKETED ALL-CAPS] tokens mark decisions Matt needs to make. Dated 2026-09-10.*
+
+---
+
+## SECTION 1 — Hero
+
+**Kicker (replaces "Custom Built • Agency-Grade • High Converting"):**
+Custom Design • Professional Copy • Built to Get Found
+
+**H1 (replaces "Get a Professional WordPress Website, Without the Huge Upfront Fee"):**
+Get a Website That Brings In Business
+
+**Subhead (replaces "Starting at $295/Month"):**
+Serious websites for serious businesses.
+
+**Buttons:** Get Started | See Pricing
+
+---
+
+## SECTION 2 — Four Icon Blocks
+
+**Designed for You**
+Custom design that looks professional and earns trust the moment people land.
+
+**Written for You**
+Copy that says what you do and why to choose you, clearly enough to convert.
+
+**Optimized for You**
+Growing reach that gets you found in Google and in AI answers.
+
+**Supported for You**
+WordPress hosting, support, and unlimited updates, handled for you every month.
+
+---
+
+## SECTION 3 — Problem ("Your business has taken off" slot)
+
+**H2:** Your website needs to do more than just look good.
+
+**H3:** It needs to also help you get found.
+
+It's easy to make a website look good these days. Templates and AI tools turn them out fast and cheap. But looking good and performing are two different jobs, and a site only grows your business when the right people find it, in Google and in AI answers, and when the words convince them to call once they land.
+
+**You should be able to trust that the website you buy will do the job you bought it for: deliver leads.**
+
+**Button:** Get Started
+
+---
+
+## SECTION 4 — "A Professional SiteFlyer Website Helps You" bullets
+
+**H2:** A SiteFlyer website is built to:
+
+- Turn visitors into calls and quotes.
+- Get you found in Google and in AI answers.
+- Get better every month instead of going stale.
+
+---
+
+## SECTION 5 — "Sharp Copy. Smart Design." + eight feature cards
+
+**H2:** Sharp Design. Smart Copy. Growing Reach.
+
+A website that performs has to do two things: convert the visitors who arrive, and bring in the traffic to fill it. That takes sharp design, smart copy, and growing reach.
+
+**At SiteFlyer, we do all three: we design the site, write the copy, and do the search work. One team, accountable for the whole thing.**
+
+**Custom Design**
+Designed to match your brand and look as credible as the work you do.
+
+**Copy That Converts**
+Clear, scannable copy written by professionals who learn your business first.
+
+**Google Search**
+Ongoing SEO so customers searching for what you do find you.
+
+**AI Answers**
+Optimization so tools like ChatGPT recommend your business when customers ask.
+
+**WordPress**
+Built on an open platform you hold the keys to, so your site can move with you.
+
+**Hosting & Support**
+An A-grade sitespeed guarantee, emergency uptime response, and a real support team.
+
+**Unlimited Updates**
+Content updates included, so the site keeps up as your business grows.
+
+**Proven Process**
+A step-by-step process that takes most sites from kickoff to launch in about three months.
+
+---
+
+## SECTION 6 — Pricing & Packages
+
+**H2:** Pricing & Packages
+
+**H3:** Two products. Three ways to pay for each.
+
+Good work costs more than cheap work. Flexible payment puts it in reach: pay once as a project, or pay monthly and let the site help cover its own cost as it starts working. The work is identical either way.
+
+### Card 1 — Website
+
+A custom-designed, professionally written site of 5 to 6 core pages, with hosting, support, and unlimited updates.
+
+- **$10,000** paid today
+- **$1,000/m** over 12 months
+- **$600/m** over 24 months
+
+*For businesses that already have a steady way to get found and need a site that converts.*
+
+### Card 2 — Website + Search *(most popular)*
+
+The same website, plus an ongoing search program: SEO, AI answers optimization, local search, and site speed, with a monthly check-in.
+
+- **$22,000** for year one, paid today
+- **$2,200/m** over 12 months
+- **$1,600/m** over 24 months
+
+*For businesses whose customers find them through search.*
+
+**No setup fees.**
+
+#### Always Included
+
+**Features & Benefits**
+
+- Custom design matched to your brand
+- Professional copywriting on every page
+- Hosting, support, and security updates
+- Unlimited content updates
+- A-grade sitespeed guarantee
+- Emergency website uptime response
+
+#### Need More Than Standard Scope? *(replaces the Add-ons column)*
+
+The prices above cover a standard-scope site: 5 to 6 core pages built around a single call to action. Larger projects, e-commerce, sites serving multiple audiences, and most nonprofit builds start with a **Website Blueprint**, where we scope the work and price it right.
+
+**Not sure which fits?** Book a call and we'll tell you straight.
+
+---
+
+## SECTION 7 — The SiteFlyer Website Development Plan
+
+**H2:** How SiteFlyer Works
+
+**1. Plan**
+*We learn your business first*
+We learn how your business works, who your customers are, and what the site needs to do, then map it out and write the copy.
+
+**2. Build**
+*We design and build your site*
+We design and build the site, getting the layout, the visuals, and the technical foundation right. Most sites take about three months from kickoff to launch.
+
+**3. Grow**
+*The search work begins*
+Once it launches, we work to get you found in Google and in AI answers, and keep improving the site month after month.
+
+**Ready to get started?**
+**Button:** Get Started
+
+---
+
+## SECTION 8 — See Our Work
+
+**Websites for Construction & Trades**
+General contractors, roofers, electricians, plumbers, HVAC, remodelers, landscapers.
+
+**Websites for Health & Local Practices**
+Dental offices, med-spas, chiropractors, physical therapy, and other local practices.
+
+**Websites for Nonprofits & Professional Services**
+Nonprofits, law firms, financial advisors, and other professional organizations.
+
+*(Each card keeps its "See More" link.)*
+
+---
+
+## SECTION 9 — Frequently Asked Questions
+
+**How does payment work?**
+Every site comes with three ways to pay: once as a project, over 12 months, or over 24 months. The website and the work are identical on every option; only the payment changes. There are no setup fees.
+
+**Do I own my site?**
+Yes. Pay for it as a project and it's yours at launch. Pay monthly and the website is paid off at the end of your term. After that, you choose what comes next: continue the search program, or drop to hosting and support only. [MATT TO CONFIRM: public language for canceling or paying off mid-term under the new model]
+
+**What platform is it built on?**
+We build on WordPress, hosted on a WordPress-optimized server, with a premium page builder for a flexible setup. We don't use closed, proprietary platforms, because you should *want* to work with us, not feel like you *have* to.
+
+**Can I make updates myself?**
+Yes. The sites are easy to update, so you can confidently make minor changes yourself. You also have a support team: submit a ticket and we'll change content, add photos, or publish a blog post for you.
+
+**What does the search program include?**
+Ongoing monthly work aimed at whatever matters most for getting your business found: local SEO, organic search, AI answers optimization, and site speed, plus a short monthly meeting to review progress.
+
+**Is SiteFlyer a USA-based web design company?**
+SiteFlyer is a brand of Banker Creative, based in St Paul, MN. We work with clients across the United States.
+
+---
+
+## SECTION 10 — Final CTA
+
+**H2:** Ready for a Website That Brings In Business?
+
+**Button:** Get Started
+
+---
+---
+
+# Appendix — Flags & Open Items
+
+1. **Pricing cards go from three to two.** The section stays, but the layout holds two product cards with three prices each instead of three tier cards. The old $295/$395/$595 tiers and 1/4/10-page framing are retired per the 7/22 pricing.
+2. **Add-ons column replaced.** Old add-on SKUs (Local SEO $800/m, Google Ads $800/m, ADA $100/m, reporting $50/m, policies $5/m) don't exist in the new pricing. I replaced that column with the standard-scope / Website Blueprint block, which the pricing doc treats as a critical guardrail. [MATT TO CONFIRM: any add-ons that remain sellable and public]
+3. **FAQ cancellation language.** The old 24-month-minimum / contract-buyout answer doesn't map to the new model, and the early-payoff terms (balance minus 5%) are marked internal in the pricing doc. The ownership FAQ carries a placeholder for whatever Matt wants public.
+4. **ADA FAQ removed** because its answer was the retired $100/m add-on. Confirm the new ADA story before re-adding.
+5. **Post-term prices left off the page** ($1,800/m search, $235/m hosting) per the pricing doc's "not published" rule; the FAQ describes the options without numbers.
+6. **Hero subhead doesn't lead with a price.** Positioning says flexible payment supports the story and shouldn't be the headline, so the hero sells performance and mentions payment second. If a starting price is wanted back in the hero, $600/m (24-month website) is the honest floor.
+7. **"Our Work" categories changed.** Accounting firms removed (routed to Benchmark, out of market for SiteFlyer) and Tech & SaaS swapped for Health & Local Practices plus Nonprofits to match the ICPs. The three mockup images will need to match.
+8. **International claim dropped** from the USA FAQ ("and internationally") since the context doc describes a national focus. Restore if still true and wanted.
+9. **Transitional CTA is still blank in Messaging.** The secondary hero button is navigational (See Pricing); if a lead-capture transitional offer gets decided, it slots in here and above the footer.
+10. **SEO title and meta description** still say "Starting at $295/month" and will need a matching rewrite, along with the Pricing and Process pages, which repeat the old model.
