@@ -1,0 +1,1 @@
+- [Static preview restarts](static-preview-restarts.md) — do not restart the static workflow for HTML/CSS edits; restarts can disconnect the embedded Preview pane.
