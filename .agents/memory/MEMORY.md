@@ -1,1 +1,2 @@
 - [Static preview restarts](static-preview-restarts.md) — do not restart the static workflow for HTML/CSS edits; restarts can disconnect the embedded Preview pane.
+- [Homepage type overrides](homepage-type-overrides.md) — verify computed styles at the target viewport; ID-level type rules can defeat later class-based overrides.
