@@ -230,6 +230,11 @@ margin: 0 0 -12px !important;
 	font-weight: 700;
 }
 
+/* The section title stands on its own; suppress the inherited catalogue eyebrow. */
+#included-addons .fl-node-ago6fy2pvqwd .uabb-infobox-title-prefix {
+display: none !important;
+}
+
 #fl-main-content .traffic-conversion .fl-row-content {
 	max-width: 1200px !important;
 }
