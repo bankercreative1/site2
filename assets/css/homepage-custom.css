@@ -33,3 +33,82 @@
 		white-space: nowrap;
 	}
 }
+
+/* Compact homepage benefits row */
+.fl-node-0cv5owzhdfxs > .fl-row-content-wrap {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.fl-node-lxmsuna9zyjc .fl-heading-text {
+	white-space: nowrap;
+}
+
+.fl-node-5mk8nfegiro2 > .fl-col-content,
+.fl-node-rfa3bulw4p29 > .fl-col-content {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.fl-node-i9ywhs1f5tpm .pp-icon-list-item {
+	align-items: center;
+	display: flex !important;
+	margin-bottom: 8px !important;
+	white-space: nowrap;
+}
+
+.fl-node-i9ywhs1f5tpm .pp-list-item-icon {
+	align-items: center;
+	background: #fff !important;
+	border-radius: 50%;
+	color: #d63011 !important;
+	display: inline-flex !important;
+	flex: 0 0 30px;
+	height: 30px;
+	justify-content: center;
+	margin-right: 12px;
+	width: 30px;
+}
+
+@media (min-width: 993px) {
+	.fl-node-5mk8nfegiro2 {
+		width: 36%;
+	}
+
+	.fl-node-rfa3bulw4p29 {
+		width: 64%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.fl-node-5mk8nfegiro2 {
+		width: 38% !important;
+	}
+
+	.fl-node-rfa3bulw4p29 {
+		width: 62% !important;
+	}
+
+	.fl-node-lxmsuna9zyjc .fl-heading {
+		font-size: 30px;
+	}
+
+	.fl-node-i9ywhs1f5tpm .pp-list-item-text {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.fl-node-0cv5owzhdfxs > .fl-row-content-wrap {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+	.fl-node-lxmsuna9zyjc .fl-heading {
+		font-size: clamp(25px, 8vw, 34px);
+	}
+
+	.fl-node-i9ywhs1f5tpm .pp-icon-list-item {
+		white-space: normal;
+	}
+}
