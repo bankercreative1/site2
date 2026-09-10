@@ -8,7 +8,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		transform: translateY(clamp(45px, 5vw, 85px));
+		transform: translateY(clamp(80px, 7vw, 120px));
 	}
 
 	.fl-node-jbmnfavyoerk .fl-heading {
@@ -17,7 +17,7 @@
 	}
 
 	.fl-node-5yf7l3be4pur .fl-heading {
-		font-size: clamp(18px, 1.55vw, 28px);
+		font-size: clamp(14px, 1.25vw, 21px);
 		line-height: 1.3;
 		white-space: nowrap;
 	}
@@ -29,7 +29,7 @@
 	}
 
 	.fl-node-5yf7l3be4pur .fl-heading {
-		font-size: clamp(13px, 3.6vw, 18px);
+		font-size: clamp(11px, 3vw, 15px);
 		white-space: nowrap;
 	}
 }
