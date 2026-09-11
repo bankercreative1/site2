@@ -350,7 +350,7 @@ font-size: var(--sf-home-hero-size) !important;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	max-width: 1180px;
+	max-width: 1000px;
 }
 
 #homepage-feature-cards .fl-col-group {
