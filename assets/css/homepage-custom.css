@@ -388,6 +388,7 @@ font-size: var(--sf-home-hero-size) !important;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	margin: 0 !important;
 	min-height: 190px;
 	padding: 28px 112px 28px 28px !important;
 	position: relative;
