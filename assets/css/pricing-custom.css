@@ -544,11 +544,14 @@ display: none !important;
 
 /* One full-width add-ons section with two internal columns. */
 #included-addons {
-	background: #fff;
-	border: 1px solid #d5d9e1;
+	background: #324670;
+	border: 0;
+	box-shadow: 0 0 0 100vmax #324670;
+	clip-path: inset(0 -100vmax);
 	display: grid !important;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	margin-top: 32px;
+	padding: 34px 0 36px;
 	width: 100%;
 }
 
@@ -561,7 +564,7 @@ display: none !important;
 .pricing-addons-heading {
 	background: #324670;
 	grid-column: 1 / -1;
-	padding: 24px 32px;
+	padding: 0 32px 24px;
 }
 
 #fl-main-content .pricing-addons-heading h2 {
@@ -623,16 +626,16 @@ display: none !important;
 }
 
 #included-addons > .fl-col + .fl-col {
-	border-left: 1px solid #d5d9e1;
+	border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #included-addons > .fl-col > .fl-col-content {
-	background: #fff !important;
+	background: transparent !important;
 	border: 0 !important;
 	border-radius: 0 !important;
 	height: 100%;
 	margin: 0 !important;
-	padding: 28px 32px 30px !important;
+	padding: 0 32px !important;
 }
 
 #included-addons .fl-module,
@@ -653,7 +656,7 @@ display: none !important;
 }
 
 #fl-main-content #included-addons .uabb-infobox-title {
-	color: #324670 !important;
+	color: #fff !important;
 	font-size: 27px !important;
 	line-height: 1.15 !important;
 	margin: 0 0 16px !important;
@@ -667,6 +670,7 @@ display: none !important;
 }
 
 #included-addons .pp-icon-list-item {
+	color: #fff;
 	align-items: start;
 	display: grid !important;
 	grid-template-columns: 22px minmax(0, 1fr);
@@ -677,7 +681,7 @@ display: none !important;
 }
 
 #included-addons .pp-list-item-icon {
-	color: #d83a25 !important;
+	color: #fff !important;
 	margin: 1px 0 0 !important;
 	padding: 0 !important;
 	position: static !important;
@@ -690,13 +694,19 @@ display: none !important;
 }
 
 #included-addons .fl-node-a56eckzs10tg {
-	border-top: 1px solid #d5d9e1 !important;
+	border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
 	margin: 20px 0 18px !important;
 	padding: 0 !important;
 }
 
 #included-addons .fl-node-a56eckzs10tg .fl-module-content {
 	display: none;
+}
+
+#included-addons .fl-rich-text,
+#included-addons .fl-rich-text p,
+#included-addons .fl-rich-text strong {
+	color: #fff !important;
 }
 
 @media (max-width: 767px) {
@@ -711,13 +721,20 @@ display: none !important;
 
 	#included-addons > .fl-col + .fl-col {
 		border-left: 0;
-		border-top: 1px solid #d5d9e1;
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
 	}
 
-	.pricing-addons-heading,
+	.pricing-addons-heading {
+		padding: 0 22px 24px !important;
+	}
+
 	.pricing-addons-column,
 	#included-addons > .fl-col > .fl-col-content {
-		padding: 24px 22px !important;
+		padding: 0 22px !important;
+	}
+
+	#included-addons > .fl-col + .fl-col > .fl-col-content {
+		padding-top: 24px !important;
 	}
 }
 
