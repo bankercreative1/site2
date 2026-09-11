@@ -329,6 +329,108 @@ font-size: var(--sf-home-hero-size) !important;
 	}
 }
 
+/* Traffic + conversion framing moved from pricing into the navy homepage band. */
+#homepage-benefits > .fl-row-content-wrap {
+	padding: 64px 24px;
+}
+
+#homepage-benefits .fl-row-content {
+	max-width: 1000px;
+}
+
+.homepage-conversion {
+	color: #fff;
+}
+
+.homepage-conversion__header {
+	margin: 0 auto 38px;
+	max-width: 900px;
+	text-align: center;
+}
+
+#fl-main-content .homepage-conversion__header h2 {
+	font-size: clamp(30px, 3.5vw, 46px) !important;
+	line-height: 1.08 !important;
+	margin: 0 0 18px;
+	text-transform: none;
+}
+
+.homepage-conversion__header h2 span {
+	display: block;
+}
+
+.homepage-conversion__header h2 span:first-child {
+	color: #fff;
+}
+
+.homepage-conversion__header h2 span:last-child {
+	color: #d5d9e1;
+}
+
+.homepage-conversion__header p {
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.homepage-conversion__pillars {
+	align-items: stretch;
+	display: grid;
+	gap: 26px;
+	grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.homepage-conversion__pillars > div {
+	border: 1px solid rgba(255, 255, 255, 0.28);
+	padding: 28px 32px;
+}
+
+#fl-main-content .homepage-conversion__pillars h3 {
+	color: #fff !important;
+	font-size: 27px !important;
+	margin: 0 0 10px;
+}
+
+.homepage-conversion__pillars p {
+	color: #fff;
+	font-size: 17px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.homepage-conversion__plus {
+	align-self: center;
+	color: #d5d9e1;
+	font-family: "Zilla Slab", Georgia, serif;
+	font-size: 58px;
+	line-height: 1;
+}
+
+@media (max-width: 767px) {
+	#homepage-benefits > .fl-row-content-wrap {
+		padding: 48px 20px;
+	}
+
+	.homepage-conversion__header {
+		margin-bottom: 28px;
+		text-align: left;
+	}
+
+	.homepage-conversion__pillars {
+		gap: 16px;
+		grid-template-columns: 1fr;
+	}
+
+	.homepage-conversion__pillars > div {
+		padding: 24px;
+	}
+
+	.homepage-conversion__plus {
+		justify-self: center;
+	}
+}
+
 /* Eight aligned feature cards */
 #homepage-features-intro > .fl-row-content-wrap {
 	padding: 72px 20px 42px;
