@@ -41,16 +41,18 @@
   --sf-h3:        35px;  --sf-h3-lh:   42px;  --sf-h3-weight: 800;
   --sf-h4:        22px;  --sf-h4-lh:   26px;  --sf-h4-weight: 500;
   --sf-alt:       35px;  --sf-alt-lh:  42px;  --sf-alt-weight: 100;
+  --sf-eyebrow:   15px;  --sf-eyebrow-lh: 21px; --sf-eyebrow-weight: 800;
   --sf-body:      18px;  --sf-body-lh: 25px;  --sf-body-weight: 100;
   --sf-button:    22px;  --sf-button-lh: 18px; --sf-button-weight: 400;
   --sf-nav:       14px;  --sf-nav-lh:  18px;  --sf-nav-weight: 700;
 
   /* ---- type scale, mobile (<= ~390px) --------------------------------- */
-  --sf-h1-sm:     25px;  --sf-h1-sm-lh:   33px;
-  --sf-h2-sm:     24px;  --sf-h2-sm-lh:   26px;
-  --sf-h3-sm:     18px;  --sf-h3-sm-lh:   22px;
-  --sf-h4-sm:     16px;  --sf-h4-sm-lh:   19px;
-  --sf-alt-sm:    18px;  --sf-alt-sm-lh:  22px;
+  --sf-h1-sm:     36px;  --sf-h1-sm-lh:   40px;
+  --sf-h2-sm:     28px;  --sf-h2-sm-lh:   31px;
+  --sf-h3-sm:     22px;  --sf-h3-sm-lh:   26px;
+  --sf-h4-sm:     18px;  --sf-h4-sm-lh:   22px;
+  --sf-alt-sm:    24px;  --sf-alt-sm-lh:  28px;
+  --sf-eyebrow-sm: 14px; --sf-eyebrow-sm-lh: 20px;
   --sf-body-sm:   15px;  --sf-body-sm-lh: 22px;
   --sf-button-sm: 16px;  --sf-button-sm-lh: 19px;
 

@@ -1,21 +1,4 @@
 /* Homepage-specific refinements */
-body.home {
-	--sf-home-hero-size: clamp(32px, 3.75vw, 54px);
-	--sf-home-h2-size: clamp(26px, 2.55vw, 38px);
-	--sf-home-h2-line-height: 1.08;
-}
-
-body.home #fl-main-content h2,
-body.home #fl-main-content h2 .fl-heading-text {
-	font-size: var(--sf-home-h2-size) !important;
-	line-height: var(--sf-home-h2-line-height) !important;
-}
-
-#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading,
-#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading .fl-heading-text {
-	line-height: 0.94 !important;
-}
-
 .hero-headline-line {
 	display: block;
 	white-space: nowrap;
@@ -82,30 +65,9 @@ body.home #fl-main-content h2 .fl-heading-text {
 		width: 100%;
 	}
 
-	.fl-node-jbmnfavyoerk .fl-heading {
-		font-size: clamp(40px, 3.6vw, 62px);
-		line-height: 1.08;
-	}
-
-	.fl-node-5yf7l3be4pur .fl-heading {
-		font-size: clamp(14px, 1.25vw, 21px);
-		line-height: 1.3;
-		white-space: nowrap;
-	}
-
-	.fl-node-5yf7l3be4pur .alt-heading {
-		font-size: inherit !important;
-		white-space: nowrap;
-	}
 }
 
 @media (min-width: 1201px) {
-	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading,
-	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading .fl-heading-text {
-		font-size: clamp(48px, 3.75vw, 54px) !important;
-		line-height: 0.94 !important;
-	}
-
 	#fl-main-content .fl-node-5yf7l3be4pur.fl-module-heading h3.fl-heading,
 	#fl-main-content .fl-node-5yf7l3be4pur.fl-module-heading h3.fl-heading .fl-heading-text,
 	#fl-main-content .fl-node-5yf7l3be4pur.fl-module-heading h3.fl-heading .fl-heading-text .alt-heading {
@@ -128,25 +90,12 @@ body.home #fl-main-content h2 .fl-heading-text {
 		width: 40% !important;
 	}
 
-	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading,
-	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading .fl-heading-text {
-		font-size: clamp(34px, 4vw, 40px) !important;
-		line-height: 0.94 !important;
-	}
-
 	#fl-main-content .fl-node-5yf7l3be4pur.fl-module-heading h3.fl-heading,
 	#fl-main-content .fl-node-5yf7l3be4pur.fl-module-heading h3.fl-heading .fl-heading-text,
 	#fl-main-content .fl-node-5yf7l3be4pur.fl-module-heading h3.fl-heading .fl-heading-text .alt-heading {
 		font-size: 20px !important;
 		line-height: 1.3 !important;
 		white-space: nowrap !important;
-	}
-}
-
-@media (min-width: 768px) and (max-width: 900px) {
-	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading,
-	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading .fl-heading-text {
-		font-size: clamp(32px, 4.25vw, 34px) !important;
 	}
 }
 
@@ -175,21 +124,6 @@ body.home #fl-main-content h2 .fl-heading-text {
 		transform: none !important;
 	}
 
-	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading,
-	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading .fl-heading-text {
-		font-size: clamp(22px, 7vw, 28px) !important;
-		line-height: 0.98 !important;
-	}
-
-	.fl-node-5yf7l3be4pur .fl-heading {
-		font-size: clamp(11px, 3vw, 15px);
-		white-space: nowrap;
-	}
-
-	.fl-node-5yf7l3be4pur .alt-heading {
-		font-size: inherit !important;
-		white-space: nowrap;
-	}
 }
 
 /* Keep the desktop/tablet hero continuous across imported breakpoints. */
@@ -202,17 +136,6 @@ body.home #fl-main-content h2 .fl-heading-text {
 		width: 40% !important;
 	}
 
-	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading,
-	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading .fl-heading-text {
-font-size: var(--sf-home-hero-size) !important;
-		line-height: 0.94 !important;
-	}
-}
-
-@media (max-width: 767px) {
-	body.home {
-		--sf-home-h2-size: clamp(20px, 4.8vw, 24px);
-	}
 }
 
 /* Compact homepage benefits row */
@@ -575,18 +498,18 @@ font-size: var(--sf-home-hero-size) !important;
 
 .homepage-pricing__header h2 {
 	color: #324670;
-	font-size: clamp(38px, 4vw, 58px);
-	line-height: 1;
+	font-size: var(--sf-h2);
+	line-height: var(--sf-h2-lh);
 	margin: 0 0 16px;
 	text-transform: uppercase;
 }
 
 .homepage-pricing__header h3 {
 	color: #d63011;
-	font-family: "Zilla Slab", Georgia, serif;
-	font-size: clamp(26px, 2.7vw, 38px);
-	font-weight: 400;
-	line-height: 1.12;
+	font-family: var(--sf-font-alt);
+	font-size: var(--sf-alt);
+	font-weight: var(--sf-alt-weight);
+	line-height: var(--sf-alt-lh);
 	margin: 0 0 18px;
 }
 
@@ -816,4 +739,42 @@ font-size: var(--sf-home-hero-size) !important;
 		padding-left: 0;
 		padding-top: 36px;
 	}
+}
+
+/* Visual roles take precedence over the imported node-level heading sizes. */
+@media (min-width: 1201px) {
+	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading,
+	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading .fl-heading-text {
+		font-size: 54px !important;
+		line-height: 0.98 !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading,
+	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading .fl-heading-text {
+		font-size: 44px !important;
+		line-height: 1 !important;
+	}
+}
+
+@media (max-width: 767px) {
+	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading,
+	#fl-main-content .fl-node-jbmnfavyoerk.fl-module-heading h1.fl-heading .fl-heading-text {
+		font-size: var(--sf-h1-sm) !important;
+		line-height: var(--sf-h1-sm-lh) !important;
+	}
+
+	#fl-main-content .fl-node-5yf7l3be4pur.fl-module-heading h3.fl-heading,
+	#fl-main-content .fl-node-5yf7l3be4pur.fl-module-heading h3.fl-heading .fl-heading-text,
+	#fl-main-content .fl-node-5yf7l3be4pur.fl-module-heading h3.fl-heading .fl-heading-text .alt-heading {
+		font-size: 18px !important;
+		line-height: 24px !important;
+		white-space: normal !important;
+	}
+}
+
+#fl-main-content .homepage-pricing__header h3 {
+	font-family: var(--sf-font-alt) !important;
+	font-weight: var(--sf-alt-weight) !important;
 }

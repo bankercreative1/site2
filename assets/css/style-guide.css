@@ -310,12 +310,12 @@ code {
 .sg-viewport--phone .sg-v-body { font-family: var(--sf-font-body); font-size: 14px; font-weight: 400; }
 @media (max-width: 992px) {
   :root {
-    --sg-h1: 38px;
-    --sg-h2: 28px;
-    --sg-h3: 20px;
-    --sg-h4: 16px;
-    --sg-alt: 20px;
-    --sg-body: 15px;
+    --sg-h1: 44px;
+    --sg-h2: 34px;
+    --sg-h3: 26px;
+    --sg-h4: 20px;
+    --sg-alt: 28px;
+    --sg-body: 17px;
   }
   .sg-font-grid { grid-template-columns: 1fr; }
   .sg-font-card { min-height: 0; }
@@ -323,12 +323,12 @@ code {
 }
 @media (max-width: 767px) {
   :root {
-    --sg-h1: 25px;
-    --sg-h2: 24px;
-    --sg-h3: 18px;
-    --sg-h4: 16px;
-    --sg-alt: 18px;
-    --sg-body: 15px;
+    --sg-h1: 36px;
+    --sg-h2: 28px;
+    --sg-h3: 22px;
+    --sg-h4: 18px;
+    --sg-alt: 24px;
+    --sg-body: 16px;
   }
 }
 @media (max-width: 700px) {
