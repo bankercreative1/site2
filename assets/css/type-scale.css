@@ -55,6 +55,13 @@
 #fl-main-content .sf-title-on-dark .fl-heading-text {
   color: var(--sf-white) !important;
 }
+#fl-main-content .col-pricing-top .alt-heading {
+  color: var(--sf-white) !important;
+}
+#fl-main-content .sf-section-dark .alt-heading,
+#fl-main-content .sf-section-dark .sml-title {
+  color: var(--sf-white) !important;
+}
 #fl-main-content .sf-eyebrow {
   color: var(--sf-accent) !important;
   font-family: var(--sf-font-body) !important;
