@@ -58,7 +58,9 @@
 #fl-main-content .col-pricing-top .alt-heading {
   color: var(--sf-white) !important;
 }
-#fl-main-content .sf-section-dark .alt-heading,
+#fl-main-content .sf-section-dark .alt-heading {
+  color: var(--sf-light-blue) !important;
+}
 #fl-main-content .sf-section-dark .sml-title {
   color: var(--sf-white) !important;
 }

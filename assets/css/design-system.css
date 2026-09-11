@@ -17,6 +17,7 @@
   --sf-ink:        rgb(58, 58, 58);    /* body text, by far the most used */
   --sf-navy:       rgb(50, 70, 111);   /* #32466f  headings, dark sections */
   --sf-accent:     rgb(214, 48, 17);   /* #d63011  links, buttons, alt headings */
+  --sf-light-blue: rgb(192, 216, 220); /* #c0d8dc  secondary headings on navy */
   --sf-white:      rgb(255, 255, 255);
   --sf-surface:    rgb(247, 247, 247); /* light section background */
   --sf-border:     rgb(204, 204, 204);
