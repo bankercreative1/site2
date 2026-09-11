@@ -709,6 +709,22 @@ display: none !important;
 	color: #fff !important;
 }
 
+/* Fine Print hierarchy: section title must clearly outrank its topics. */
+#fl-main-content #fine-print h2,
+#fl-main-content #fine-print h2 .fl-heading-text {
+	color: #324670 !important;
+	font-size: 44px !important;
+	font-weight: 800 !important;
+	line-height: 1.08 !important;
+}
+
+#fl-main-content .fl-node-glr7tmepihof .fl-list-item-heading,
+#fl-main-content .fl-node-glr7tmepihof .fl-list-item-heading-text {
+	font-size: 27px !important;
+	font-weight: 800 !important;
+	line-height: 1.15 !important;
+}
+
 @media (max-width: 767px) {
 	#included-addons {
 		grid-template-columns: 1fr;
@@ -735,6 +751,16 @@ display: none !important;
 
 	#included-addons > .fl-col + .fl-col > .fl-col-content {
 		padding-top: 24px !important;
+	}
+
+	#fl-main-content #fine-print h2,
+	#fl-main-content #fine-print h2 .fl-heading-text {
+		font-size: 32px !important;
+	}
+
+	#fl-main-content .fl-node-glr7tmepihof .fl-list-item-heading,
+	#fl-main-content .fl-node-glr7tmepihof .fl-list-item-heading-text {
+		font-size: 21px !important;
 	}
 }
 

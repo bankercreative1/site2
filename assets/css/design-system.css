@@ -37,8 +37,6 @@
 
   /* ---- type scale, desktop (>= ~960px) -------------------------------- */
   --sf-h1:        60px;  --sf-h1-lh:   78px;  --sf-h1-weight: 800;
-  /* 40 of 53 pages. 7 pages use 40/52 instead AND fail to scale down on
-     mobile, staying 40px at 390px. That is a defect on those pages. */
   --sf-h2:        44px;  --sf-h2-lh:   48px;  --sf-h2-weight: 800;
   --sf-h3:        35px;  --sf-h3-lh:   42px;  --sf-h3-weight: 800;
   --sf-h4:        22px;  --sf-h4-lh:   26px;  --sf-h4-weight: 500;

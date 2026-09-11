@@ -3,3 +3,4 @@
 - [Imported hero spacing](imported-hero-spacing.md) — wide-screen padding can collapse hero content even when its outer width and child width rules appear correct.
 - [Homepage responsive system](homepage-responsive-system.md) — use shared fluid layout and type rules; avoid accumulating fixes for individual viewport widths.
 - [Pricing page color rhythm](pricing-page-color-rhythm.md) — alternate light and navy section bands; do not flatten the full page into one background color.
+- [Site typography hierarchy](site-typography-hierarchy.md) — use shared desktop, tablet, and phone scales; page CSS must not invent sizes or let subsections outrank titles.
