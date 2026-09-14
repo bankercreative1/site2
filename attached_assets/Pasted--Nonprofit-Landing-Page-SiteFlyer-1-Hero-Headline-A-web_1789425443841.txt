@@ -1,0 +1,119 @@
+# Nonprofit Landing Page - SiteFlyer
+
+## 1. Hero
+
+**Headline:** A website as credible as the work you do in the community.
+
+**Subhead:** We design, write, and build websites for nonprofits, turning your programs, audiences, and funding into one clear plan.
+
+**CTA:** Get Started
+
+---
+
+## 2. Value Stack
+
+**Every audience finds their path.**
+Participants find your programs, donors see your impact, and grant reviewers find the language they evaluate you by. One site, each conversation clear.
+
+**One plan, with every voice at the table.**
+The Blueprint brings your stakeholders together and ends with a unified plan, so the site gets built with intention instead of assembled by committee.
+
+**A one-time cost you can plan a year around.**
+Pay for the site as a defined project in the year you have the funding, whether that comes from the operating budget, a technology grant, or a key donor.
+
+---
+
+## 3. Problem
+
+**Superheadline:** The nonprofit website problem
+
+**Headline:** Your website is talking to everyone at once.
+
+A nonprofit website has more jobs than a business website. The people who use your programs need to find them and access them. Donors need to see the impact. Grant reviewers evaluate you in a language of their own. Volunteers, staff, and partners each need something too. So the site tries to say everything, every stakeholder adds a piece, and the result comes out bloated and unclear. The message that matters most gets buried under all the others. You should be able to trust that your website does the job you built it for: making the mission clear to every person who needs to understand it.
+
+---
+
+## 4. Solution
+
+**Headline:** Start with a Blueprint. Then build.
+
+We start every nonprofit engagement with a process designed to get to know your organization and what matters to you. We call it the Website Blueprint. A quote written without that planning is a guess at what you need. Before anyone designs a page, we work out who your audiences are, what each of them needs from the site, what pages it takes, and how to frame every conversation. Your stakeholders get a voice at the table, and the Blueprint turns those voices into one unified plan, with a firm price to build it.
+
+Then we build to the plan:
+
+- **Sharp design** that looks professional and earns trust, so people take your organization seriously the moment they land.
+- **Smart copy** that says what you do and why it matters, clearly enough to turn a visitor into a participant, a donor, or a volunteer.
+
+---
+
+## 5. Two Ways to Start
+
+Most organizations that come to us are one of two kinds.
+
+### Card 1
+
+**Eyebrow:** A safer way to start
+
+**Card name:** Blueprint First
+
+**Who it's for:** Your website needs are complex, and you need help figuring out what the site should do and what it will cost.
+
+**How it works:** We run strategy calls with your stakeholders to understand what you want from the website, analyze what it needs to do from a functionality standpoint, and audit your current site for pages worth preserving or folding in. Then we plan the new site.
+
+**Includes:**
+- An optimal sitemap for the new site
+- A content plan for every page: what a copywriter writes, what your team writes, and the technical detail grant writers need
+- Three homepage design mockups to set the design direction
+- Technology recommendations: platform, plugins, and accessibility
+- A recommended plan and a firm price to build it, mapped to your set budget if you have one
+- A document you own: build with us, or use it to get real quotes from any agency
+
+**Price:** $2,500
+
+**CTA:** Get Started
+
+### Card 2
+
+**Eyebrow:** For organizations with a clear ask
+
+**Card name:** Website Project
+
+**Who it's for:** Your website needs are straightforward. You have one core program, your audiences are defined, and your call to action is plain.
+
+**How it works:** We work out what the site needs to say and to whom, then design, write, and build it.
+
+**Includes:**
+- Strategy, sized to the project
+- Custom design and professional copywriting
+- About 10 to 15 pages
+- WordPress build, hosting, and support
+
+**Price:** Starting at $10,000
+
+**CTA:** Get Started
+
+---
+
+## 6. About SiteFlyer
+
+**Headline:** The team behind the work
+
+SiteFlyer has been building websites for small businesses and nonprofits since 2017, an evolution of the work we have always done at Banker Creative, our studio in St. Paul. Every site gets a custom design and professional copywriting, built on WordPress. Our nonprofit work includes organizations like The Aliveness Project and Rise.
+
+---
+
+## 7. Testimonial
+
+> "They took the time to get to know our organization and understand our mission. We now have a website that is reflective of our community."
+>
+> **Dylan Boyer, Director of Development, The Aliveness Project**
+
+---
+
+## 8. Final CTA
+
+**Headline:** A website your organization can be proud of.
+
+Give your participants, your donors, and your funders one clear place to understand the work. Start with a Blueprint, build with intention, and launch a site that finally matches the mission you have built.
+
+**CTA:** Get Started
