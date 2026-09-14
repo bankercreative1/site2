@@ -1,0 +1,159 @@
+# Nonprofit Landing Page - SiteFlyer
+
+*Read this first: Drafted 9/14 on the BMG homepage framework, adapted for a nonprofit landing page that sells the Website Blueprint first and the standard project second. Copy lifts from the locked SiteFlyer Messaging where it applies; nonprofit-specific framing comes from Matt's 9/14 context. The intermediary/cohort concept from Jesse's draft is excluded. Placeholders map to Appendix A; structural decisions are in Appendix B.*
+
+---
+
+## 1. Hero
+
+**Headline:** A website as credible as the work you do in the community.
+
+**Subhead:** We design, write, and build websites for nonprofits, turning your programs, audiences, and funding into one clear plan.
+
+**CTA:** Get Started
+
+---
+
+## 2. Value Stack
+
+**Every audience finds their path.**
+Participants find your programs, donors see your impact, and grant reviewers find the language they evaluate you by. One site, each conversation clear.
+
+**One plan, with every voice at the table.**
+The Blueprint brings your stakeholders together and ends with a unified plan, so the site gets built with intention instead of assembled by committee.
+
+**A one-time cost you can plan a year around.**
+Pay for the site as a defined project in the year you have the funding, whether that comes from the operating budget, a technology grant, or a key donor.
+
+---
+
+## 3. Problem
+
+**Superheadline:** The nonprofit website problem
+
+**Headline:** Your website is talking to everyone at once.
+
+A nonprofit website has more jobs than a business website. The people who use your programs need to find them and access them. Donors need to see the impact. Grant reviewers evaluate you in a language of their own. Volunteers, staff, and partners each need something too. So the site tries to say everything, every stakeholder adds a piece, and the result comes out bloated and unclear. The message that matters most gets buried under all the others. You should be able to trust that your website does the job you built it for: making the mission clear to every person who needs to understand it.
+
+---
+
+## 4. Solution
+
+**Headline:** Start with a Blueprint. Then build.
+
+SiteFlyer starts every nonprofit engagement with a process designed to get to know your organization and what matters to you. We call it the Website Blueprint. Before anyone designs a page, we work out who your audiences are, what each of them needs from the site, what pages it takes, and how to frame every conversation. Your stakeholders get a voice at the table, and the Blueprint turns those voices into one unified plan.
+
+Then we build to the plan:
+
+- **Sharp design** that looks professional and earns trust, so people take your organization seriously the moment they land.
+- **Smart copy** that says what you do and why it matters, clearly enough to turn a visitor into a participant, a donor, or a volunteer.
+
+---
+
+## 5. Two Ways to Start
+
+*[Layout note for build: two side-by-side package cards, matching the card treatment on the new site's pricing page. Every engagement includes the strategy work; the cards differ in how deep it goes.]*
+
+Most organizations that come to us are one of two kinds.
+
+---
+
+### Card 1
+
+**Eyebrow:** For multi-program organizations
+
+**Card name:** Blueprint First
+
+**Who it's for:** Your site has to work for participants, donors, funders, and volunteers at once, and the right structure is hard to see from inside the organization.
+
+**How it works:** We start with the Website Blueprint: a strategy engagement that maps your audiences, the pages the site needs, how to frame each conversation, and the messaging. Your stakeholders get a voice at the table, and the Blueprint turns those voices into one unified plan. Then we design, write, and build to it.
+
+**Includes:**
+- Website Blueprint: audience map, page plan, and messaging
+- Stakeholder input built into the process
+- Custom design and professional copywriting
+- WordPress build, hosting, and support
+
+**Price:** [CLIENT TO CONFIRM: Blueprint engagement pricing and how it appears on the card]
+
+**CTA:** Get Started
+
+---
+
+### Card 2
+
+**Eyebrow:** For organizations with a clear ask
+
+**Card name:** Website Project
+
+**Who it's for:** You have one core program, your audiences are defined, and your call to action is plain.
+
+**How it works:** The same strategy thinking, sized to a simpler site. We work out what the site needs to say and to whom, then design, write, and build it as a defined, one-time project you can plan a year around.
+
+**Includes:**
+- Strategy, sized to the project
+- Custom design and professional copywriting
+- About [CLIENT TO CONFIRM: page-count range] pages
+- WordPress build, hosting, and support
+
+**Price:** [CLIENT TO CONFIRM: publish $10,000 on the card?]
+
+**CTA:** Get Started
+
+---
+
+## 6. About SiteFlyer
+
+**Headline:** The team behind the work
+
+SiteFlyer has been building websites for small businesses and nonprofits since 2017, an evolution of the work we have always done at Banker Creative, our studio in St. Paul. Every site gets a custom design and professional copywriting, built on WordPress. Our nonprofit work includes organizations like [CLIENT TO CONFIRM: nameable client organizations].
+
+---
+
+## 7. How It Works
+
+1. **Blueprint** — We learn how your organization works, who your audiences are, and what the site needs to do, then map it out and write the copy.
+2. **Build** — We design and build the site, getting the layout, the visuals, and the technical foundation right.
+3. **Launch and support** — Your site launches, with hosting, support, and content updates handled by our team under [CLIENT TO CONFIRM: post-launch support terms for nonprofit projects].
+
+---
+
+## 8. Testimonial
+
+> "They took the time to get to know our organization and understand our mission. We now have a website that is reflective of our community."
+>
+> **Dylan Boyer, Director of Development, The Aliveness Project**
+
+---
+
+## 9. Final CTA
+
+**Headline:** A website your organization can be proud of.
+
+Give your participants, your donors, and your funders one clear place to understand the work. Start with a Blueprint, build with intention, and launch a site that finally matches the mission you have built.
+
+**CTA:** Get Started
+
+---
+---
+
+## Appendix A — Client Questions
+
+1. **Nameable clients.** Which organizations from Jesse's list can we publicly claim as SiteFlyer (or Banker Creative) work: The Aliveness Project, Rise, Center for Multicultural Mediation, The Friends of the Saint Paul Public Library, Nebe Center? Maps to the About placeholder.
+2. **Testimonial permission.** Is the Dylan Boyer quote cleared for use, with his title, on this page?
+3. **Standard-project page count.** The pricing doc defines standard scope as 5-6 core pages with a single CTA; the 9/14 context described the straightforward nonprofit project as roughly 10-15 pages. Which range governs the nonprofit standard project, and does the $10,000 price hold at that count? Maps to the Who It's For placeholder.
+4. **Prices on the cards.** The pricing-page cards presumably show prices. Publish the $10,000 project price on the Website Project card, and what (if anything) shows on the Blueprint First card: a Blueprint price, "starting at," or "custom scope"? Maps to both card price placeholders.
+5. **Blueprint as a product.** Is the Website Blueprint a separately priced, paid engagement for nonprofits, and is that price public? What is the named deliverable the client receives?
+6. **Post-launch terms.** What do nonprofit project clients get after launch: hosting & support at $235/m, something else, or case by case? Maps to the How It Works placeholder.
+7. **Culturally specific communication claim.** Jesse's draft claimed experience with culturally specific communication. Keep it, and if so, what proof backs it? (Omitted from this draft pending an answer.)
+8. **CTA choice.** Hero and Final CTA use "Get Started," the Messaging Primary CTA. A Blueprint-first sale may fit a conversation CTA better (Jesse's draft used "Schedule a Conversation"). Which should run?
+
+## Appendix B — Structural Decisions
+
+1. **The page sells the Blueprint first.** Solution is built around the Website Blueprint per the 9/14 context; the standard project appears as the secondary path in Who It's For. This inverts the main site's product order deliberately.
+2. **The search pillar is omitted.** Messaging's third pillar (Growing reach) and the Plan's Grow step describe the subscription product. The nonprofit offer is project-based, so the page runs on the design and copy pillars only, and the Plan is adapted from Plan/Build/Grow to Blueprint/Build/Launch-and-support.
+3. **Problem leads with the External layer, nonprofit-adapted.** The multi-audience/committee problem carries the emotional weight for this buyer; the paragraph lands on the Messaging Philosophical frame ("trust that the website does the job you built it for"), adapted from lead delivery to mission clarity.
+4. **Who It's For became a two-card packages section ("Two Ways to Start").** Per Matt 9/14: two side-by-side cards modeled on the new site's pricing-page card treatment, Blueprint First and Website Project. No subscription option appears on this page. Both cards state that strategy is included; they differ in depth. Card anatomy (eyebrow / name / who-it's-for / how-it-works / includes / price / CTA) is a standard structure drafted without access to the new site's repo; verify against the actual pricing cards and adjust fields to match.
+5. **Subscription framing is absent by design.** Payment flexibility language from Messaging (pay over time) is excluded; the page speaks in annual-budget, grant, and donor-funding terms per the 9/14 context.
+6. **Source note.** Locked Positioning and Messaging are built around the local-service subscription buyer. Nonprofit-specific claims on this page trace to Matt's 9/14 context and Profile B in Positioning. Recommend a nonprofit addendum to the Messaging doc after this page locks, consistent with homepage-leads-docs-follow.
+7. **Excluded from Jesse's draft.** The intermediary/cohort product (sponsored business websites, visibility cohorts, technical-assistance programs) is out of scope for this page pending the business decision.
