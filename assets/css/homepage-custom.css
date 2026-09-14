@@ -370,30 +370,38 @@
 }
 
 #homepage-features-intro > .fl-row-content-wrap {
+	padding: 72px 20px 42px;
+}
+
+#homepage-features-intro .fl-row-content {
+	max-width: 960px;
+}
+
+.homepage-solution-section #homepage-features-intro > .fl-row-content-wrap {
 	background: transparent;
 	padding: 0;
 }
 
-#homepage-features-intro .fl-row-content {
+.homepage-solution-section #homepage-features-intro .fl-row-content {
 	max-width: none;
 }
 
-#homepage-features-intro .sf-eyebrow {
+.homepage-solution-section #homepage-features-intro .sf-eyebrow {
 	color: var(--sf-light-blue) !important;
 	text-align: left;
 }
 
-#homepage-features-intro .fl-heading,
-#homepage-features-intro .fl-rich-text,
-#homepage-features-intro .fl-rich-text p {
+.homepage-solution-section #homepage-features-intro .fl-heading,
+.homepage-solution-section #homepage-features-intro .fl-rich-text,
+.homepage-solution-section #homepage-features-intro .fl-rich-text p {
 	text-align: left;
 }
 
-#homepage-features-intro .homepage-solution-title__line {
+.homepage-solution-section #homepage-features-intro .homepage-solution-title__line {
 	white-space: nowrap;
 }
 
-#homepage-features-intro .fl-rich-text {
+.homepage-solution-section #homepage-features-intro .fl-rich-text {
 	color: var(--sf-white);
 }
 
@@ -402,6 +410,10 @@
 }
 
 #homepage-feature-cards > .fl-row-content-wrap {
+	padding: 0 20px 100px;
+}
+
+.homepage-solution-section #homepage-feature-cards > .fl-row-content-wrap {
 	background: transparent;
 	padding: 0;
 }
@@ -416,10 +428,14 @@
 #homepage-feature-cards .fl-col-group {
 	display: grid !important;
 	gap: 20px;
-	grid-template-columns: minmax(0, 1fr);
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 	margin: 0 !important;
 	padding: 0 !important;
 	width: 100%;
+}
+
+.homepage-solution-section #homepage-feature-cards .fl-col-group {
+	grid-template-columns: minmax(0, 1fr);
 }
 
 #homepage-feature-cards .uabb-row-separator {
@@ -503,7 +519,7 @@
 	line-height: 1.08 !important;
 }
 
-#homepage-feature-cards .value-props .alt-heading {
+.homepage-solution-section #homepage-feature-cards .value-props .alt-heading {
 	color: var(--sf-navy) !important;
 }
 
