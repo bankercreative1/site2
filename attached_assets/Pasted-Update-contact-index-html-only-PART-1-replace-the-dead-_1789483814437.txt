@@ -1,0 +1,38 @@
+Update contact/index.html only.
+
+PART 1 — replace the dead form with the booking calendar
+
+The Gravity Form on this page posts to /contact/ and returns HTTP 405. It cannot work on a static site and silently fails for anyone who submits it.
+
+Find the Gravity Form block: the <div class="...gform_wrapper..."> container and everything inside it, including <form id="gform_1"> and the hidden <iframe src="about:blank" name="gform_ajax_frame_1">. Remove that whole block and put this in its place:
+
+<iframe src="https://api.leadconnectorhq.com/widget/booking/zw7aAIh1MeATAcjSVpk8"
+  style="width:100%;border:none;overflow:auto;height:787px;display:block;"
+  scrolling="yes"
+  title="Book a call with SiteFlyer"></iframe>
+
+Do not add data-initial-iframe-hidden, data-iframe-resizer-initialized, or a generated id. Those are capture artifacts and one of them hides the iframe. Keep the explicit height — this site does not load GoHighLevel's resizer script, so without it the iframe collapses.
+
+PART 2 — add direct contact options below the calendar
+
+Underneath the iframe, add a short block offering email instead of booking, for people who just want to ask something. Use the site's existing components and existing type styles. Do not write new CSS.
+
+Content:
+
+  Heading: Prefer to email?
+  Sales questions: jesse@siteflyer.com
+  Questions and support: info@siteflyer.com
+  Phone: (651) 243-0240
+
+Make both email addresses mailto: links and the phone a tel: link.
+
+PART 3 — fix a broken phone link
+
+The existing tel: links on this page contain a stray invisible Unicode character (U+202C) at the end of the number, which can break tap-to-call. The href should be exactly tel:+16512430240 with no trailing characters.
+
+Change nothing else. Do not touch other pages. Do not remove Gravity markup from get-started/ or support-request/ — those come next.
+
+Verify before reporting done: load /contact/, confirm the calendar renders with visible height, both email links and the phone link are present and clickable, and no <form action="/contact/"> remains.
+
+Then commit and push:
+git push "https://x-access-token:$GH_TOKEN@github.com/bankercreative1/site2.git" main
