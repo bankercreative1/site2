@@ -42,3 +42,17 @@ mtime_ms = 1788970523568
 storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:a73ba315-22c0-45d8-a967-1f47130acecb/d9ece646-c0f6-43a9-8d5f-da7760dcc83b/1c41bd8b-6c6f-4899-bb95-a7b7036fe3f9"
 storage_version_token = "1788970992111816"
 content_type = "image/jpeg"
+
+[[outputs]]
+id = "PBtiGw9PjoArC3Sa6frLl"
+uri = "file://screenshots/homepage-mobile-390.png"
+type = "image"
+title = "Homepage mobile preview — 390px"
+description = "Current homepage hero after the responsive fix: centered laptop, headline, and subheadline with no right-side clipping."
+logical_id = "b88142e6-fd1d-4de3-9aa3-6a1c2006572f"
+content_hash = "sha256:81cd6e4b5db4831ae72643ec756d9951e568818d2155199615e1b63953335b53"
+size = 192261
+mtime_ms = 1789490928681
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:a73ba315-22c0-45d8-a967-1f47130acecb/b88142e6-fd1d-4de3-9aa3-6a1c2006572f/5cea5efb-9597-411d-acdb-f321d7308f1e"
+storage_version_token = "1789490929560873"
+content_type = "image/png"
