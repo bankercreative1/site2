@@ -72,6 +72,8 @@
 }
 
 .siteflyer-mobile-title {
+  width: 100%;
+  max-width: 370px;
   margin: 0;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: clamp(27px, 7.5vw, 30px);

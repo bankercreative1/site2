@@ -29,7 +29,7 @@ export function MobileRefined() {
         </h1>
 
         <p className="siteflyer-mobile-subtitle">
-          <span className="siteflyer-mobile-subtitle-primary">Custom design · Professional copy</span>
+          <span className="siteflyer-mobile-subtitle-primary">Custom design • Professional copy</span>
           <span>Built to get found</span>
         </p>
 
