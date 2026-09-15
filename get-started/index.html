@@ -485,9 +485,50 @@ document.addEventListener("DOMContentLoaded",function(){
      active:"pp-accordion-item-active", setsDisplay:false},
     {root:"pp-faq", single:"pp-faq-collapse", item:"pp-faq-item",
      btn:"pp-faq-button", panel:"pp-faq-content",
-     active:"pp-faq-item-active", setsDisplay:true}
+     active:"pp-faq-item-active", setsDisplay:true},
+    {root:"uabb-rbs-wrapper", type:"content-toggle",
+     labels:[".uabb-rbs-head-1",".uabb-rbs-head-2"],
+     panels:[".uabb-rbs-section-1",".uabb-rbs-section-2"]}
   ].forEach(function(K){
     document.querySelectorAll("."+K.root).forEach(function(acc){
+      if(K.type==="content-toggle"){
+        var labels=K.labels.map(function(selector){return acc.querySelector(selector);});
+        var panels=K.panels.map(function(selector){return acc.querySelector(selector);});
+        if(labels.some(function(label){return !label;})||panels.some(function(panel){return !panel;}))return;
+        var input=acc.querySelector(".uabb-rbs-switch");
+        var setContentToggle=function(index){
+          labels.forEach(function(label,i){
+            var selected=i===index;
+            label.setAttribute("role","button");
+            label.setAttribute("tabindex","0");
+            label.setAttribute("aria-selected",selected?"true":"false");
+            label.setAttribute("aria-pressed",selected?"true":"false");
+          });
+          panels.forEach(function(panel,i){
+            var visible=i===index;
+            panel.style.display=visible?"":"none";
+            panel.setAttribute("aria-hidden",visible?"false":"true");
+          });
+          if(input)input.checked=index===1;
+        };
+        var selectContentToggle=function(index,event){
+          if(event){event.preventDefault();event.stopPropagation();}
+          setContentToggle(index);
+        };
+        labels.forEach(function(label,index){
+          label.addEventListener("click",function(event){selectContentToggle(index,event);});
+          label.addEventListener("keydown",function(event){
+            if(event.key==="Enter"||event.key===" "||event.key==="Spacebar"){
+              selectContentToggle(index,event);
+            }
+          });
+        });
+        if(input){
+          input.addEventListener("change",function(){setContentToggle(input.checked?1:0);});
+        }
+        setContentToggle(0);
+        return;
+      }
       var single=acc.classList.contains(K.single);
       var items=[].slice.call(acc.querySelectorAll("."+K.item));
       items.forEach(function(item){
