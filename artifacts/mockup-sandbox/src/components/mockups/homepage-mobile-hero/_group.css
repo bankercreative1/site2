@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/__mockup/fonts/montserrat-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("/__mockup/fonts/zilla-slab-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.siteflyer-mobile-hero {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color: #32466f;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.22)),
+    url("/__mockup/images/siteflyer-hero-background.png") center top / cover no-repeat;
+}
+
+.siteflyer-mobile-hero * {
+  box-sizing: border-box;
+}
+
+.siteflyer-mobile-header {
+  height: 72px;
+  padding: 10px 18px 8px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.siteflyer-mobile-logo {
+  display: block;
+  width: 182px;
+  height: auto;
+}
+
+.siteflyer-mobile-menu {
+  width: 28px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  display: grid;
+  align-content: space-between;
+  background: transparent;
+}
+
+.siteflyer-mobile-menu span {
+  width: 20px;
+  height: 3px;
+  margin-left: auto;
+  display: block;
+  background: #32466f;
+}
+
+.siteflyer-mobile-main {
+  padding: 88px 16px 70px;
+  text-align: center;
+}
+
+.siteflyer-mobile-laptop {
+  display: block;
+  width: min(100%, 360px);
+  height: auto;
+  margin: 0 auto 48px;
+}
+
+.siteflyer-mobile-title {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: clamp(27px, 7.5vw, 30px);
+  line-height: 1.18;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.siteflyer-mobile-title span {
+  display: block;
+  white-space: nowrap;
+}
+
+.siteflyer-mobile-subtitle {
+  margin: 18px auto 22px;
+  color: #cf351d;
+  font-family: "Zilla Slab", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.siteflyer-mobile-subtitle span {
+  display: block;
+}
+
+.siteflyer-mobile-subtitle .siteflyer-mobile-subtitle-primary {
+  white-space: nowrap;
+}
+
+.siteflyer-mobile-actions {
+  width: min(100%, 230px);
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+}
+
+.siteflyer-mobile-action {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d63011;
+  border-radius: 3px;
+  color: #32466f;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.siteflyer-mobile-action-primary {
+  border-color: #32466f;
+  color: #fff;
+  background: #32466f;
+}
