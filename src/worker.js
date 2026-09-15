@@ -10,6 +10,23 @@
  * Range requests matter here: without them a browser cannot seek in a video and
  * some will refuse to play at all.
  */
+let footerHtmlPromise;
+
+function normalizePath(path) {
+  const withoutIndex = path.replace(/\/index\.html$/, '/');
+  return withoutIndex === '/' ? '/' : withoutIndex.replace(/\/$/, '');
+}
+
+function getFooterHtml(env) {
+  if (!footerHtmlPromise) {
+    footerHtmlPromise = env.ASSETS
+      .fetch('https://assets.local/partials/footer')
+      .then((response) => response.status === 200 ? response.text() : null)
+      .catch(() => null);
+  }
+  return footerHtmlPromise;
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -62,6 +79,40 @@ export default {
     }
 
     // everything else is a static file
-    return env.ASSETS.fetch(request);
+    const response = await env.ASSETS.fetch(request);
+    const contentType = response.headers.get('content-type') || '';
+    if (!contentType.toLowerCase().startsWith('text/html')) {
+      return response;
+    }
+
+    const footerHtml = await getFooterHtml(env);
+    if (footerHtml === null) {
+      return response;
+    }
+
+    const requestPath = normalizePath(url.pathname);
+
+    const footerResponse = new HTMLRewriter()
+      .on('footer', {
+        element(element) {
+          element.setInnerContent(footerHtml, { html: true });
+        },
+      })
+      .transform(response);
+
+    return new HTMLRewriter()
+      .on('footer a[href]', {
+        element(element) {
+          const href = element.getAttribute('href');
+          if (!href) return;
+
+          const linkUrl = new URL(href, url);
+          if (linkUrl.origin === url.origin &&
+              normalizePath(linkUrl.pathname) === requestPath) {
+            element.setAttribute('aria-current', 'page');
+          }
+        },
+      })
+      .transform(footerResponse);
   },
 };
