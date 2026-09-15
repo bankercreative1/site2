@@ -1,0 +1,25 @@
+Fix the footer so it lives in ONE file instead of being duplicated on 56 pages.
+
+Right now every page carries its own copy of the <footer> element. Changing the footer means editing 56 files, and last time only 2 got updated. Fix the architecture, not just the missing link.
+
+The site is served by the Cloudflare Worker in src/worker.js. Every HTML page goes through it. Use Cloudflare's HTMLRewriter to replace the footer on the way out.
+
+Do this:
+
+1. Create partials/footer.html containing ONE canonical footer — the inner contents of the <footer> element, taken from index.html, which is the only correct version. It includes the Nonprofit Websites menu item. Do not include the outer <footer> tag itself, just what goes inside it.
+
+2. In src/worker.js, after the existing /video/ handling and before the final return:
+   - Get the response from env.ASSETS.fetch(request) as now
+   - If the response content-type is HTML, pipe it through HTMLRewriter
+   - Match the selector "footer" and use element.setInnerContent(footerHtml, { html: true }) to replace its contents with partials/footer.html
+   - Load partials/footer.html once via env.ASSETS.fetch and cache it in a module-level variable so it is not re-fetched per request
+   - Leave non-HTML responses untouched
+
+3. The current-page marker: each page's old footer marked its own nav item with aria-current. A shared footer cannot bake that in. In the HTMLRewriter, after injecting, match "footer a[href]" and set aria-current="page" on the link whose href matches the request path. That keeps the behaviour and removes the need for per-page footers.
+
+4. Do not delete the <footer> elements from the 56 pages. Leave them as-is. The Worker replaces their contents at serve time, so they become harmless placeholders, and nothing breaks if the Worker is bypassed.
+
+5. Test locally, then confirm: fetch three different pages and verify each one's footer contains /nonprofit-websites/ and that the correct nav item has aria-current on each.
+
+Then commit and push:
+git push "https://x-access-token:$GH_TOKEN@github.com/bankercreative1/site2.git" main
