@@ -6,6 +6,10 @@
   "name": "siteflyer-static",
   "main": "src/worker.js",
   "compatibility_date": "2026-09-08",
+  "routes": [
+    { "pattern": "siteflyer.com", "custom_domain": true },
+    { "pattern": "www.siteflyer.com", "custom_domain": true }
+  ],
   "assets": {
     "directory": ".",
     "binding": "ASSETS",
