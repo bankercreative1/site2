@@ -1,0 +1,29 @@
+Fix the broken content toggle on get-started/index.html.
+
+The page has a UABB content-toggle module (fl-node-qu4v5sniaz6h) with two labels, "Get Started" and "FAQs". Clicking them does nothing. The module's JavaScript was stripped during the static migration. The FAQ content is NOT lost - it is present in the page inside a div with style="display: none;" (about 13KB, starting with "What happens if I cancel my subscription?").
+
+Restore the toggle behaviour using the same approach already used elsewhere on this site.
+
+1. Look at the inline restore script near the end of the <head> in this file. It already contains a table-driven handler for PowerPack collapsibles (pp-accordion and pp-faq). Follow that same pattern - add the content-toggle as another entry rather than writing a separate one-off block.
+
+2. Behaviour required:
+   - Two labels act as a switch: clicking one shows its panel and hides the other
+   - The panel shown on load should be the "Get Started" one, matching current behaviour
+   - Set aria-selected (or aria-pressed) correctly on each label
+   - Give the labels role="button" and tabindex="0" if they lack them
+   - Enter and Space must work, not just click
+
+3. Do not delete or move the FAQ content. Do not un-hide it permanently - it should be hidden until the FAQs label is clicked.
+
+4. Do not write new CSS. Toggle visibility in JavaScript, the same way the pp-faq handler does, because this module's CSS has no open-state rule either.
+
+5. Change nothing else, and do not touch other pages.
+
+Verify before reporting done, by actually clicking:
+   - Load /get-started/, click "FAQs", confirm the FAQ content becomes visible and the Get Started panel hides
+   - Click "Get Started", confirm it switches back
+   - Tab to the labels and press Enter, confirm it toggles
+   - Confirm the homepage accordion and the /pricing/ FAQ still work - those use the shared script and must not regress
+
+Then commit and push:
+git push "https://x-access-token:$GH_TOKEN@github.com/bankercreative1/site2.git" main

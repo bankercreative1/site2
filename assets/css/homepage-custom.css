@@ -144,6 +144,16 @@
 	margin-bottom: 100px;
 }
 
+@media (min-width: 1201px) {
+	.homepage-problem .fl-node-b6tuvn2w35qj {
+		width: 40% !important;
+	}
+
+	.homepage-problem .fl-node-8b3hvuraky2q {
+		width: 60% !important;
+	}
+}
+
 .fl-node-0cv5owzhdfxs > .fl-row-content-wrap {
 	padding-top: 40px;
 	padding-bottom: 40px;
