@@ -9,3 +9,4 @@
 - [Cloudflare Worker asset rewriting](cloudflare-worker-assets.md) — Worker-first routing and canonical extensionless asset paths are required for runtime HTML transforms.
 - [Cloudflare publish verification](cloudflare-publish-verification.md) — a GitHub main update is not proof that the Cloudflare-hosted pages have changed; verify live content.
 - [Live mockup cache busting](live-mockup-cache-busting.md) — append a revision query to updated canvas iframe URLs when hot reload is not reflected in the embedded frame.
+- [Cloudflare stylesheet caching](cloudflare-stylesheet-caching.md) — live CSS can remain stale in browsers despite a fresh deployment because static assets use long immutable caching at unchanged URLs.
