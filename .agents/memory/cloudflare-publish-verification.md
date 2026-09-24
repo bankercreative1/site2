@@ -5,6 +5,6 @@ description: Distinguish GitHub updates from completed Cloudflare publication.
 
 Do not report a Siteflyer GitHub push as a completed Cloudflare publication until the production pages actually serve the new content.
 
-**Why:** A successful update to GitHub's main branch did not update the Cloudflare-served pages during subsequent checks, despite the repository's README describing automatic deployment. GitHub and Cloudflare are separate publication stages, and the repository alone cannot prove the external deployment configuration works.
+**Why:** GitHub accepted pushes while Cloudflare's build failed before deployment: a committed npm lockfile resolved packages through a Replit-only mirror that Cloudflare cannot reach. GitHub and Cloudflare are separate publication stages, and a successful push alone does not prove the build or deployment worked.
 
-**How to apply:** After pushing, compare the relevant production URLs with the intended page changes. If they remain stale, check Cloudflare's deployment status or obtain authorized Cloudflare deployment access; report GitHub success and Cloudflare status separately.
+**How to apply:** This static site needs no root npm manifests; keep any Replit-generated root package files out of Git. After pushing, wait for the Workers Builds check to succeed, then compare the relevant production URLs with the intended page changes. Report GitHub success and Cloudflare status separately.
