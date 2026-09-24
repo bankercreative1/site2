@@ -67,3 +67,15 @@ asset references and imports in CSS. External URLs, page fragments, and
 production-only `/video/*` URLs are intentionally excluded.
 
 Do not modify the HTML, CSS, or asset files as part of the Replit run setup.
+
+## Publishing
+
+This site is served by Cloudflare, not Replit. Do NOT use Replit's Publish button and do NOT add a Cloudflare API key.
+
+To publish: commit and push to GitHub main.
+
+    git push origin main
+
+Cloudflare watches the repository, builds automatically, and the change is live on siteflyer.com in a few minutes. That is the only publishing step.
+
+When Matt says "publish", "push it live", or "make it live", this is what he means.
