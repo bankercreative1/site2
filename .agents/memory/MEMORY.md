@@ -7,3 +7,4 @@
 - [Component page assembly](component-page-assembly.md) — keep copied modules inside their source wrapper chain; tag counts alone cannot prove correct placement.
 - [Nonprofit copy approval](nonprofit-copy-approval.md) — use supplied draft copy only; never add visible marketing language without approval.
 - [Cloudflare Worker asset rewriting](cloudflare-worker-assets.md) — Worker-first routing and canonical extensionless asset paths are required for runtime HTML transforms.
+- [Live mockup cache busting](live-mockup-cache-busting.md) — append a revision query to updated canvas iframe URLs when hot reload is not reflected in the embedded frame.
