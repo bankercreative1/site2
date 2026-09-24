@@ -10,3 +10,5 @@
 - [Cloudflare publish verification](cloudflare-publish-verification.md) — a GitHub main update is not proof that the Cloudflare-hosted pages have changed; verify live content.
 - [Live mockup cache busting](live-mockup-cache-busting.md) — append a revision query to updated canvas iframe URLs when hot reload is not reflected in the embedded frame.
 - [Cloudflare stylesheet caching](cloudflare-stylesheet-caching.md) — live CSS can remain stale in browsers despite a fresh deployment because static assets use long immutable caching at unchanged URLs.
+- [Support form verification](support-form-verification.md) — the external support form's bot challenge blocks automated end-to-end submission; distinguish render checks from confirmed delivery.
+- [Contact booking embed](contact-booking-embed.md) — the vendor resize script can leave a booking iframe hidden on the static contact page; prefer a visible fixed-height, scrollable frame.
