@@ -43,3 +43,27 @@ made six times on this site.
 - Reformat, prettify or re-indent any file.
 - Remove `application/ld+json` blocks or the inline script near `</head>`.
 - Rewrite a page you were not asked to change.
+
+# Running on Replit
+
+This project is a static website with no build step or dependencies.
+
+- Run command: `python3 -m http.server 5000 --bind 0.0.0.0`
+- The server exposes the repository root exactly as imported.
+- Production `/video/*` requests are handled by Cloudflare and are expected to return 404 in the Replit preview.
+
+
+## Checking links and assets
+
+After editing the site, run:
+
+```sh
+python3 scripts/check_site_links.py
+```
+
+The check scans every HTML file in the repository and verifies local page links,
+stylesheets, scripts, fonts, images, and other referenced files. It also follows
+asset references and imports in CSS. External URLs, page fragments, and
+production-only `/video/*` URLs are intentionally excluded.
+
+Do not modify the HTML, CSS, or asset files as part of the Replit run setup.
