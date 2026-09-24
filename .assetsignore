@@ -1,0 +1,48 @@
+# What is NOT part of the public website.
+#
+# wrangler.jsonc sets the asset directory to "." (the repo root), so without
+# this file every file in the repo is published to siteflyer.com. Two things
+# went wrong because of that:
+#
+#   1. Cloudflare's cloud build runs `npx wrangler deploy`, which installs
+#      wrangler into the repo directory. wrangler then tried to publish its own
+#      node_modules and failed with "Asset too large" (25 MiB per-asset limit).
+#      That is why deploying from a laptop worked and the cloud build did not.
+#
+#   2. Internal files were served publicly: copy drafts in attached_assets/,
+#      agent notes in .agents/, STYLE-GUIDE.md, wrangler.jsonc and src/worker.js
+#      all returned 200 on the live domain.
+#
+# NOT ignored, deliberately:
+#   partials/  - src/worker.js fetches partials/footer through the asset
+#                binding to inject the shared footer. Ignoring it removes the
+#                footer from all 56 pages.
+#   components/ - the component gallery is a working reference the team opens.
+
+# build and tooling
+node_modules
+.git
+.wrangler
+.cache
+.upm
+.config
+.local
+
+# agent and editor working files
+.agents
+.canvas
+artifacts
+attached_assets
+screenshots
+
+# source and config, not website content
+src
+wrangler.jsonc
+package.json
+package-lock.json
+.replit
+replit.nix
+.deploy-check
+
+# documentation
+*.md
