@@ -34,3 +34,6 @@ externalPort = 3001
 [deployment]
 deploymentTarget = "static"
 publicDir = "."
+
+[nix]
+channel = "stable-25_05"
