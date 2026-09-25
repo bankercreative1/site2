@@ -496,6 +496,7 @@ document.addEventListener("DOMContentLoaded",function(){
         var panels=K.panels.map(function(selector){return acc.querySelector(selector);});
         if(labels.some(function(label){return !label;})||panels.some(function(panel){return !panel;}))return;
         var input=acc.querySelector(".uabb-rbs-switch");
+        var contactModules=document.querySelectorAll(".sf-get-started-contact-module");
         var setContentToggle=function(index){
           labels.forEach(function(label,i){
             var selected=i===index;
@@ -509,7 +510,13 @@ document.addEventListener("DOMContentLoaded",function(){
             panel.style.display=visible?"":"none";
             panel.setAttribute("aria-hidden",visible?"false":"true");
           });
-          if(input)input.checked=index===1;
+          if(input){
+            input.checked=index===1;
+            input.classList.toggle("checked",index===1);
+          }
+          contactModules.forEach(function(module){
+            module.style.display=index===1?"none":"";
+          });
         };
         var selectContentToggle=function(index,event){
           if(event){event.preventDefault();event.stopPropagation();}
@@ -744,6 +751,40 @@ document.addEventListener("DOMContentLoaded",function(){
 
 </style>
 <div class="fl-builder-content fl-builder-content-1917 fl-builder-template fl-builder-module-template fl-builder-global-templates-locked" data-post-id="1917"><div class="fl-module fl-module-html fl-html fl-node-de76tpqcrguw" data-node="de76tpqcrguw">
+<style>
+#s4kU8DQzDwnrdkkFxV8E_1754584335946 { display: none !important; }
+.fl-node-qu4v5sniaz6h .uabb-rbs-toggle:focus:not(:focus-visible),
+.fl-node-qu4v5sniaz6h .uabb-rbs-switch:focus:not(:focus-visible) {
+	outline: none;
+}
+.fl-node-qu4v5sniaz6h .uabb-rbs-switch:focus:not(:focus-visible) + .uabb-rbs-slider {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.fl-node-p90xjs2agqe5 {
+	width: 100% !important;
+	max-width: none !important;
+}
+.fl-node-p90xjs2agqe5 .fl-module-content {
+	width: 100% !important;
+	max-width: none !important;
+	margin: 0 !important;
+}
+.fl-node-p90xjs2agqe5 .uabb-gf-style {
+	padding: 20px !important;
+}
+.fl-node-p90xjs2agqe5 iframe {
+	display: block;
+	width: 100% !important;
+	max-width: 100%;
+}
+@media (min-width: 1200px) {
+	.fl-node-p90xjs2agqe5 {
+		width: calc(100% + 20px) !important;
+		margin-left: -10px !important;
+	}
+}
+</style>
 	<iframe src="https://api.leadconnectorhq.com/widget/booking/qAyaI9JHfMuOBkwASZih" style="width: 100%; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; overflow: auto;   pointer-events: none; left: -9999px; position: absolute;" scrolling="yes" id="s4kU8DQzDwnrdkkFxV8E_1754584335946" data-initial-iframe-hidden="true" data-unique-id-mapped="true" data-iframe-resizer-initialized="true"></iframe><br></div>
 </div><div class="uabb-js-breakpoint" style="display: none;"></div>
 		</div>
@@ -911,22 +952,19 @@ document.addEventListener("DOMContentLoaded",function(){
 </div>
 	</div>
 </div>
-<div id="contact" class="fl-module fl-module-separator fl-node-5km42eo83dj9" data-node="5km42eo83dj9" role="separator" aria-label="Separator">
+<div id="contact" class="fl-module fl-module-separator fl-node-5km42eo83dj9 sf-get-started-contact-module" data-node="5km42eo83dj9" role="separator" aria-label="Separator">
 	<div class="fl-separator"></div>
 </div>
-<h2 class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-5tp3zwqlexmj sf-section-title" data-node="5tp3zwqlexmj" aria-label="Heading">
+<h2 class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-5tp3zwqlexmj sf-section-title sf-get-started-contact-module" data-node="5tp3zwqlexmj" aria-label="Heading">
 			Contact Us	</h2>
-<div class="fl-module fl-module-uabb-gravity-form fl-node-p90xjs2agqe5" data-node="p90xjs2agqe5">
+<div class="fl-module fl-module-uabb-gravity-form fl-node-p90xjs2agqe5 sf-get-started-contact-module" data-node="p90xjs2agqe5">
 	<div class="fl-module-content fl-node-content">
 		
 <div class="uabb-gf-style uabb-gf-form-style1">
 	
 	
 	
-                <iframe src="https://api.leadconnectorhq.com/widget/booking/zw7aAIh1MeATAcjSVpk8"
-  style="width:100%;border:none;overflow:hidden;height:1100px;display:block;"
-  scrolling="no"
-  title="Book a call with SiteFlyer"></iframe>
+<iframe src="https://api.leadconnectorhq.com/widget/booking/qAyaI9JHfMuOBkwASZih" allow="payment" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="wXHc2obRUuVCmfVFOhcZ_1790344815736" title="Book a call with SiteFlyer"></iframe><br><script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
 		                
 </div>
 	</div>
