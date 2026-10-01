@@ -12,6 +12,16 @@
  */
 let footerHtmlPromise;
 
+const googleTagHtml = `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11534297912"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11534297912');
+</script>`;
+
 function normalizePath(path) {
   const withoutIndex = path.replace(/\/index\.html$/, '/');
   return withoutIndex === '/' ? '/' : withoutIndex.replace(/\/$/, '');
@@ -85,9 +95,17 @@ export default {
       return response;
     }
 
+    const taggedResponse = new HTMLRewriter()
+      .on('head', {
+        element(element) {
+          element.append(googleTagHtml, { html: true });
+        },
+      })
+      .transform(response);
+
     const footerHtml = await getFooterHtml(env);
     if (footerHtml === null) {
-      return response;
+      return taggedResponse;
     }
 
     const requestPath = normalizePath(url.pathname);
@@ -98,7 +116,7 @@ export default {
           element.setInnerContent(footerHtml, { html: true });
         },
       })
-      .transform(response);
+      .transform(taggedResponse);
 
     return new HTMLRewriter()
       .on('footer a[href]', {
